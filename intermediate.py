@@ -98,7 +98,7 @@
 # lst.remove(std_name)
 # print(lst)
 
-#5.2 get and update student name
+# 5.2 get and update student name
 # lst=[]
 # for i in range(1,11):
 #     name=input()
@@ -122,3 +122,28 @@
 # print(len(dict.keys()))
 # print(len(dict.values()))
 
+# 7.1 Check the email is proper or not
+# import re
+# emailid=input('Please enter your email id :')
+# x = re.search('^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$', emailid)
+# if x:
+#     print('email is valid')
+# else:
+#     print('email is not valid')
+
+# 7.2 URL is Valid or Not Valid
+# import re
+# url_id=input('enter the url: ')
+# regex="^((http|https)://)[-a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)$"
+# x = re.search(regex,url_id)
+# if x:
+#     print('URL is Valid')
+# else:
+#     print('URL is Not valid')
+
+# 8.1 reverse a substring from a string
+# word = input('enter a string: ')
+# start =int(input('enter the start:'))
+# end=int(input('enter the end:'))
+# revers=word[start:end]
+# print(revers[::-1])
