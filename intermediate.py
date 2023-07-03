@@ -147,3 +147,25 @@
 # end=int(input('enter the end:'))
 # revers=word[start:end]
 # print(revers[::-1])
+
+# 8.2 strong password generator and password length is declared by the user
+# import random
+# import string
+# letters=string.ascii_letters
+# numbers1=string.digits
+# punctation=string.punctuation
+# n_letters=int(input('enter how many letters: '))
+# n_num=int(input('enter how many numbers: '))
+# n_pun=int(input('enter how many symbols: '))
+# passlist=[]
+# for i in range(1,n_letters+1):
+#     passlist+=random.choice(letters)
+# for i in range(1,n_num+1):
+#     passlist+=random.choice(numbers1)
+# for i in range(1,n_pun+1):
+#     passlist+=random.choice(punctation)
+# random.shuffle(passlist)
+# password=""
+# for i in passlist:
+#     password+=i
+# print(password)
