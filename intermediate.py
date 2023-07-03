@@ -176,5 +176,7 @@
 # print(dict)
 # print(sorted(dict.items()))
 # print(sorted(dict.keys()))
+
+# 9.2 sort dictionary by keys
 # print(sorted(dict.values()))
 
