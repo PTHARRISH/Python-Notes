@@ -169,3 +169,11 @@
 # for i in passlist:
 #     password+=i
 # print(password)
+
+# 9.1 sort dictionary by keys
+# case sensitive while sorting number,uppercase, lowercase is a priority
+# dict={"name":"Harrish","age":"20","course":"Python","city":"chennai"}
+# print(dict)
+# print(sorted(dict.items()))
+# print(sorted(dict.keys()))
+# print(sorted(dict.values()))
