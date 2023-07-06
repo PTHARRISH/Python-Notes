@@ -181,10 +181,10 @@
 # print(sorted(dict.values()))
 
 # 10.1 program to find gravitational force
-m1 = float(input('mass of the object 1 '))
-m2 = float(input('mass of the object 2 '))
-r = float(input('enter the radius '))
-product = m1 * m2
-g = 0.00000000006674
-force = (g*(m1 * m2))/r*r
-print(str(force) + "N")
+# m1 = float(input('mass of the object 1 '))
+# m2 = float(input('mass of the object 2 '))
+# r = float(input('enter the radius '))
+# product = m1 * m2
+# g = 0.00000000006674
+# force = (g*(m1 * m2))/r*r
+# print(str(force) + "N")
