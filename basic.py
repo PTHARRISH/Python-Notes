@@ -1,3 +1,33 @@
+# Factorial number
+# def fact(n):
+#     return 1 if (n == 1 or n == 0) else n * fact(n - 1)
+# num = int(input('enter the factorial number: '))
+# print('The factorial of {0} is {1}'.format(num, fact(num)))
+
+# find the largest number in the list
+# a = [3, 8, 1, 7, 9, 5, 4]
+# b = 0
+# for i in a:
+#     if b < i:
+#         b = i
+# print('The largest number is {}'.format(b))
+
+# find the smallest number in the list
+# c = a[0]
+# for i in a:
+#     if c > i:
+#         c = i
+# print('The smallest number is {}'.format(c))
+
+# find the prime numbers
+# n=int(input('enter the number: '))
+# for i in range(2,n):
+#     if n%i==0:
+#         print('{} is not a Prime number'.format(n))
+#         break
+# else:
+#     print('{} is a Prime number'.format(n))
+
 # 6.union three set
 # a={5,12,52,0,8}
 # b={2,5,1,9,8}
@@ -147,5 +177,3 @@
 #
 # # Playing the converted file
 # os.system("javafeatures.mp3")
-
-
