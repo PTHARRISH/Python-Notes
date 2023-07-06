@@ -150,30 +150,3 @@
 #     print()
 #     space=space-1
 
-#
-# # Import the required module for text
-# # to speech conversion
-# from gtts import gTTS
-#
-# # This module is imported so that we can
-# # play the converted audio
-# import os
-#
-# # The text that you want to convert to audio
-# mytext = 'Features of Java Simple: Java is a simple language because its syntax is simple, clean, and easy to understand. Complex and ambiguous concepts of C++ are either eliminated or re-implemented in Java. For example, pointer and operator overloading are not used in Java. Object-Oriented: In Java, everything is in the form of the object. It means it has some data and behavior. A program must have at least one class and object. Robust: Java makes an effort to check error at run time and compile time. It uses a strong memory management system called garbage collector. Exception handling and garbage collection features make it strong. Secure: Java is a secure programming language because it has no explicit pointer and programs runs in the virtual machine. Java contains a security manager that defines the access of Java classes. Platform-Independent: Java provides a guarantee that code writes once and run anywhere. This byte code is platform-independent and can be run on any machine.'
-#
-# # Language in which you want to convert
-# language = 'en'
-#
-# # Passing the text and language to the engine,
-# # here we have marked slow=False. Which tells
-# # the module that the converted audio should
-# # have a high speed
-# myobj = gTTS(text=mytext, lang=language, slow=True)
-#
-# # Saving the converted audio in a mp3 file named
-# # welcome
-# myobj.save("javafeatures.mp3")
-#
-# # Playing the converted file
-# os.system("javafeatures.mp3")
