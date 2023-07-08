@@ -57,8 +57,13 @@
 #     print('{} is a Prime number'.format(n))
 
 # reverse string using for loop
-stringinp=input(enter)
-
+def rev(str):
+    str2=''
+    for i in str:
+        str2=i+str2
+    return str2
+str=input('enter the string: ')
+print('the reversed string is', rev(str))
 # 6.union three set
 # a={5,12,52,0,8}
 # b={2,5,1,9,8}
