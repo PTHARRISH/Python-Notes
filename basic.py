@@ -56,6 +56,9 @@
 # else:
 #     print('{} is a Prime number'.format(n))
 
+# reverse string using for loop
+stringinp=input(enter)
+
 # 6.union three set
 # a={5,12,52,0,8}
 # b={2,5,1,9,8}
