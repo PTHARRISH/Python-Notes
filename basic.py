@@ -186,3 +186,41 @@
 #         print("*",end="")
 #     print()
 #     space=space-1
+
+# Ratio of positive negative integer
+# def plusMinus(arr):
+#     arr = [1, -2, 0, 3, -4]
+#     positive_ratio, negative_ratio, zero_ratio = (
+#     format(len([x for x in arr if x > 0]) / len(arr), ".6f"),
+#     format(len([x for x in arr if x < 0]) / len(arr), ".6f"),
+#     format(len([x for x in arr if x == 0]) / len(arr), ".6f"),)
+#     print(positive_ratio)
+#     print(negative_ratio)
+#     print(zero_ratio)
+#
+#
+# if __name__ == '__main__':
+#     n = int(input().strip())
+#
+#     arr = list(map(int, input().rstrip().split()))
+#
+#     plusMinus(arr)
+
+
+# Convert 12 hrs time to 24 hrs railway time
+# def timeConversion(s):
+#     if s[-2:] == "AM" and s[:2] == "12":
+#         return "00" + s[2:-2]
+#     elif s[-2:] == "AM":
+#         return s[:-2]
+#     elif s[-2:] == "PM" and s[:2] == "12":
+#         return s[:-2]
+#     else:
+#         ans = int(s[:2]) + 12
+#         return str(str(ans)+s[2:8])
+# if __name__ == '__main__':
+#         s = input()
+#         result = timeConversion(s)
+#         print(result)
+
+
