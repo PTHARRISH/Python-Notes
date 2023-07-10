@@ -239,3 +239,34 @@
 # result = lonelyinteger(a)
 # print(result)
 
+
+# Fizzbuzz word
+# def fizzBuzz(n):
+#     # Write your code here
+#     i = n
+#     for i in range(1, n + 1):
+#         if i % 3 == 0 and i % 5 != 0:
+#             print('Fizz')
+#         elif i % 3 != 0 and i % 5 == 0:
+#             print('Buzz')
+#         elif i % 3 == 0 and i % 5 == 0:
+#             print('FizzBuzz')
+#         else:
+#             print(i)
+#
+#
+# if __name__ == '__main__':
+#     n = int(input().strip())
+#     fizzBuzz(n)
+
+# find the median
+# def findMedian(arr):
+#     b=sorted(arr)
+#     l=len(b)//2
+#     return b[l]
+#
+#
+# n = int(input().strip())
+# arr = list(map(int, input().rstrip().split()))
+# result = findMedian(arr)
+# print(result)
