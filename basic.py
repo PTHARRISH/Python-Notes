@@ -223,4 +223,19 @@
 #         result = timeConversion(s)
 #         print(result)
 
+#Find the Unique numbers in the list
+# def lonelyinteger(a):
+#     b = sorted(a)
+#     for i in range(len(b)):
+#         count = 0
+#         for j in range(len(b)):
+#             if b[i] == b[j]:
+#                 count += 1
+#         if count == 1:
+#             return b[i]
+#
+# n = int(input().strip())
+# a = list(map(int, input().rstrip().split()))
+# result = lonelyinteger(a)
+# print(result)
 
