@@ -13,3 +13,11 @@
 # n = Solution()
 # nums = [2, 7, 11, 15]
 # print(n.twoSum(nums, 9))
+
+# palinedrome numbers
+# def isPalindrome(self, x: int) -> bool:
+#     a = str(x)[::-1]
+#     if a == str(x):
+#         return True
+#     else:
+#         return False
