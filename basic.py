@@ -270,3 +270,20 @@
 # arr = list(map(int, input().rstrip().split()))
 # result = findMedian(arr)
 # print(result)
+
+# Python Program to Print All Odd Numbers in Range
+# lower=int(input("Enter the lower limit for the range:"))
+# upper=int(input("Enter the upper limit for the range:"))
+# for i in range(lower,upper+1):
+#     if(i%2!=0):
+#         print(i)
+
+# find the string is pangram
+# from string import ascii_lowercase as asc_lower
+# def check(s):
+#     return set(asc_lower) - set(s.lower()) == set([])
+# strng=input("Enter string:")
+# if(check(strng)==True):
+#       print("The string is a pangram")
+# else:
+#       print("The string isn't pangram")
