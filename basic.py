@@ -306,49 +306,50 @@
 #         t_number = num1 + num2
 #     cot += 1
 
-import math
-def Fibonacci(n):
-    # Check if input is 0 then it will
-    # print incorrect input
-    if n < 0:
-        print("Incorrect input")
+#Fibonacci
+# import math
+# def Fibonacci(n):
+#     # Check if input is 0 then it will
+#     # print incorrect input
+#     if n < 0:
+#         print("Incorrect input")
+#
+#     # Check if n is 0
+#     # then it will return 0
+#     elif n == 0:
+#         return 0
+#
+#     # Check if n is 1,2
+#     # it will return 1
+#     elif n == 1 or n == 2:
+#         return 1
+#
+#     else:
+#         return Fibonacci(n - 1) + Fibonacci(n - 2)
+#
+#
+# # Driver Program
+# m=int(input())
+# print(Fibonacci(m))
 
-    # Check if n is 0
-    # then it will return 0
-    elif n == 0:
-        return 0
-
-    # Check if n is 1,2
-    # it will return 1
-    elif n == 1 or n == 2:
-        return 1
-
-    else:
-        return Fibonacci(n - 1) + Fibonacci(n - 2)
-
-
-# Driver Program
-m=int(input())
-print(Fibonacci(m))
-
-
-def min_max(arr):
-  max = arr[0]
-  min = arr[0]
-  for num in arr:
-    if num > max:
-      max = num
-    if num < min:
-      min = num
-  return max, min
-
-n = int(input("Enter the size of the array: "))
-arr = []
-for i in range(n):
-  arr.append(int(input(f"Enter element {i+1}: ")))
-max, min = min_max(arr)
-print(f"The maximum element is {max}")
-print(f"The minimum element is {min}")
+# min max in array
+# def min_max(arr):
+#   max = arr[0]
+#   min = arr[0]
+#   for num in arr:
+#     if num > max:
+#       max = num
+#     if num < min:
+#       min = num
+#   return max, min
+#
+# n = int(input("Enter the size of the array: "))
+# arr = []
+# for i in range(n):
+#   arr.append(int(input(f"Enter element {i+1}: ")))
+# max, min = min_max(arr)
+# print(f"The maximum element is {max}")
+# print(f"The minimum element is {min}")
 
 
 
