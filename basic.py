@@ -8,7 +8,7 @@
 # c = input('enter thr string: ')
 # print("The ASCII value of '" + c + "' is", ord(c))
 
-# Python program to print all prime number in an interval
+# Python program to print all prime number in an interval calculation
 # def prime(x, y):
 #     prime_list = []
 #     for i in range(x, y):
