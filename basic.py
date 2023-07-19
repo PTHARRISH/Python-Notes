@@ -223,7 +223,7 @@
 #         result = timeConversion(s)
 #         print(result)
 
-#Find the Unique numbers in the list
+# Find the Unique numbers in the list
 # def lonelyinteger(a):
 #     b = sorted(a)
 #     for i in range(len(b)):
@@ -287,3 +287,68 @@
 #       print("The string is a pangram")
 # else:
 #       print("The string isn't pangram")
+
+# n = int(input("Enter length of Fibonacci series: "))
+# num1 = 0
+# num2 = 1
+# next_number = 0
+# count = 1
+# cot = 1
+# while (count <= n):
+#     if cot % 11 == 0:
+#         print("\n")
+#     else:
+#         print(next_number, end=" ")
+#         count += 1
+#         num1 = num2
+#         num2 = next_number
+#         next_number = num1 + num2
+#         t_number = num1 + num2
+#     cot += 1
+
+import math
+def Fibonacci(n):
+    # Check if input is 0 then it will
+    # print incorrect input
+    if n < 0:
+        print("Incorrect input")
+
+    # Check if n is 0
+    # then it will return 0
+    elif n == 0:
+        return 0
+
+    # Check if n is 1,2
+    # it will return 1
+    elif n == 1 or n == 2:
+        return 1
+
+    else:
+        return Fibonacci(n - 1) + Fibonacci(n - 2)
+
+
+# Driver Program
+m=int(input())
+print(Fibonacci(m))
+
+
+def min_max(arr):
+  max = arr[0]
+  min = arr[0]
+  for num in arr:
+    if num > max:
+      max = num
+    if num < min:
+      min = num
+  return max, min
+
+n = int(input("Enter the size of the array: "))
+arr = []
+for i in range(n):
+  arr.append(int(input(f"Enter element {i+1}: ")))
+max, min = min_max(arr)
+print(f"The maximum element is {max}")
+print(f"The minimum element is {min}")
+
+
+
