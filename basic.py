@@ -368,6 +368,35 @@
 # val=int(input('enter the number:'))
 # print(prime(val))
 
-
+# form a largest value from the given array
+# def get_list():
+#     new_list = []
+#     for items in input("Enter elements are separated by spaces: ").split():
+#         if items.isdigit():
+#             N=int(items)
+#             if N>=1 and N<=1000:
+#                 new_list.append(N)
+#             else:
+#                 print("Invalid input. Please enter a number between 1 and 1000000.")
+#                 return []
+#         else:
+#             print("Invalid input. Please enter a list of space-separated integers.")
+#             return []
+#     return new_list
+#
+# def order(arr):
+#     results = ""
+#     length_arr = len(arr)-1
+#     while length_arr>=0:
+#         results+=str(arr[length_arr])
+#         length_arr-=1
+#     numb=int(results)
+#     if numb>=1 and numb<=1000000:
+#         return numb
+#     else:
+#         return "Invalid input"
+#
+# arr = get_list()
+# print(order(arr))
 
 
