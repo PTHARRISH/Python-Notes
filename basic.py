@@ -351,5 +351,23 @@
 # print(f"The maximum element is {max}")
 # print(f"The minimum element is {min}")
 
+# Prime or not
+# def prime(num):
+#     if num <= 1:
+#         return "No"
+#     else:
+#         isprime = 1
+#         for i in range(2, num):
+#             if num%i == 0:
+#                 isprime+=1
+#                 break
+#         if isprime==1:
+#             return "Yes"
+#         else:
+#             return "No"
+# val=int(input('enter the number:'))
+# print(prime(val))
+
+
 
 
