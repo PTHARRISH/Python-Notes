@@ -17,7 +17,7 @@ def outerFunction(text):
 		# non local variable
 		print(text)
 
-	innerFunction()
+	innerFunction() # call the inner function 
 
 outerFunction('Hey!')
 

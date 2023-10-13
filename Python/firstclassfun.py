@@ -123,3 +123,5 @@ def tags(tag):
     return wraptext
 printh1=tags('h1') # It call the function pass the tag and it return local function you need to pass a value for locals
 printh1('Hello') # you can pass various msg on it 
+
+# ------> Nested Function
