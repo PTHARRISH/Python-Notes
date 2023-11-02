@@ -171,3 +171,174 @@ while i < 10:
 
 # Example: if, else, and elif keyword
 
+# Python program to illustrate if-elif-else ladder 
+#!/usr/bin/python 
+
+i = 20
+if (i == 10): 
+	print("i is 10") 
+elif (i == 20): 
+	print("i is 20") 
+else: 
+	print("i is not present") 
+
+# def
+
+# def keyword is used to declare user defined functions.
+# Example: def keyword
+
+# def keyword 
+def fun(): 
+	print("Inside Function") 
+
+fun() 
+
+# Return Keywords – Return, Yield
+
+#     return : This keyword is used to return from the function.
+#     yield : This keyword is used like return statement but is used to return a generator.
+
+# Example: Return and Yield Keyword
+
+# Return keyword 
+def fun(): 
+	S = 0
+
+	for i in range(10): 
+		S += i 
+	return S 
+
+
+print(fun()) 
+
+# Yield Keyword 
+
+
+def fun(): 
+	S = 0
+
+	for i in range(10): 
+		S += i 
+		yield S 
+
+
+for i in fun(): 
+	print(i) 
+
+
+# class
+
+# class keyword is used to declare user defined classes.
+# Example: Class Keyword
+
+# Python3 program to 
+# demonstrate instantiating 
+# a class 
+
+
+class Dog: 
+
+	# A simple class 
+	# attribute 
+	attr1 = "mammal"
+	attr2 = "dog"
+
+	# A sample method 
+	def fun(self): 
+		print("I'm a", self.attr1) 
+		print("I'm a", self.attr2) 
+
+
+# Driver code 
+# Object instantiation 
+Rodger = Dog() 
+
+# Accessing class attributes 
+# and method through objects 
+print(Rodger.attr1) 
+Rodger.fun() 
+
+
+# With
+
+# with keyword is used to wrap the execution of block of code within methods defined by context manager. This keyword is not used much in day to day programming.
+# Example: With Keyword
+
+# using with statement 
+with open('file_path', 'w') as file: 
+	file.write('hello world !') 
+
+
+# as
+
+# as keyword is used to create the alias for the module imported. 
+# i.e giving a new name to the imported module. E.g import math as mymath.
+# Example: as Keyword
+
+import math as gfg 
+
+print(gfg.factorial(5))
+
+
+# pass
+
+# pass is the null statement in python. 
+# Nothing happens when this is encountered. 
+# This is used to prevent indentation errors and used as a placeholder.
+# Example: Pass Keyword
+
+n = 10
+for i in range(n): 
+
+	# pass can be used as placeholder 
+	# when code is to added later 
+	pass
+
+
+# Lambda
+
+# Lambda keyword is used to make inline returning functions with no statements allowed internally. 
+# Example: Lambda Keyword
+
+# Lambda keyword 
+g = lambda x: x*x*x 
+
+print(g(7))
+
+# Import, From
+
+#   import : This statement is used to include a particular module into current program.
+#   from : Generally used with import, from is used to import particular functionality from the module imported.
+
+# Example: Import, From Keyword
+
+# import keyword 
+from math import factorial 
+import math 
+print(math.factorial(10)) 
+
+# from keyword 
+print(factorial(10))  # 3628800
+
+
+# Exception Handling Keywords – try, except, raise, finally, and assert
+
+#  try : This keyword is used for exception handling, 
+#  used to catch the errors in the code using the keyword except. 
+#  Code in “try” block is checked, if there is any type of error, except block is executed.
+#  
+#  except : As explained above, this works together with “try” to catch exceptions.
+#  
+#  finally : No matter what is result of the “try” block, block termed “finally” is always executed.
+#  
+#  raise: We can raise an exception explicitly with the raise keyword
+#  
+#  assert: This function is used for debugging purposes. 
+#  Usually used to check the correctness of code. 
+#  If a statement is evaluated to be true, nothing happens, but when it is false, “AssertionError” is raised. 
+#  One can also print a message with the error, separated by a comma.
+
+# Example: try, except, raise, finally, and assert Keywords
+
+
+
