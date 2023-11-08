@@ -44,12 +44,14 @@ class my_class:
     # global variable
     strength='empty'
     classroom='None'
+    a=20
 
     def __init__(self,class_name="None",staff="Unallotted",fullname="None"):
     # self : Pointer to Current Object. staff=None is default arguments
         self.staff_name=staff # Instance variable creating automatically
         self.fullname=fullname
         self.classroom=class_name
+        print(a)
         print(self.staff_name,self.fullname,self.classroom)
 
 
@@ -121,3 +123,13 @@ obj2.myfunct('Santhosh')
 # Keep in mind that the self parameter in the constructor refers to the instance being created and allows 
 # you to access and set its attributes. 
 
+class my_class1:
+    # global variable
+
+    def __init__(self):
+        a=10
+        b=20
+    # self : Pointer to Current Object. staff=None is default argument
+        print(a+b)
+s1=my_class1()
+    
