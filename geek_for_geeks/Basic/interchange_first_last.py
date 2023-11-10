@@ -26,8 +26,12 @@ def interchange(arr):
 
 arr=list(map(int,input().split(' ')))
 print(interchange(arr))
-# temp=arr[0]
-    # arr[0]=arr[-1]
-    # arr[-1]=temp
-    # a,*b,c=arr
-    # arr=[c,*b,a]
+
+# interchange first and last using Extended iterable unpacking
+def interchange(arr):
+    a,*b,c=arr
+    arr=[c,*b,a]
+    return arr
+
+arr=list(map(int,input().split(' ')))
+print(interchange(arr))
