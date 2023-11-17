@@ -27,7 +27,8 @@ def armstrong(n):
         n = n//10
     if s == sum1:
         print("The given number", s, "is armstrong number")
-    print("The given number", s, "is not armstrong number")
+    else:
+        print("The given number", s, "is not armstrong number")
 
 n=int(input('Enter the Armstrong Number: '))
 print(armstrong(n))
