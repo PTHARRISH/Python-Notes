@@ -34,3 +34,4 @@ def compound_interest(principal, rate, time):
     print("Compound interest is", CI)
 
 compound_interest(1200, 5.4, 2)
+# Time complexity: O(1)
