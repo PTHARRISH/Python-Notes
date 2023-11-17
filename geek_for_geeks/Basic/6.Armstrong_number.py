@@ -15,4 +15,19 @@ print(armstrong(n))
 # Time complexity: O(n), wheer n is length of number
 
 
-#
+# using while loop
+
+def armstrong(n): 
+    s = n 
+    b = len(str(n))
+    sum1 = 0
+    while n != 0:
+        r = n % 10
+        sum1 = sum1+(r**b)
+        n = n//10
+    if s == sum1:
+        print("The given number", s, "is armstrong number")
+    print("The given number", s, "is not armstrong number")
+
+n=int(input('Enter the Armstrong Number: '))
+print(armstrong(n))
