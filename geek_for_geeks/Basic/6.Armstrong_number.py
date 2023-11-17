@@ -32,3 +32,12 @@ def armstrong(n):
 
 n=int(input('Enter the Armstrong Number: '))
 print(armstrong(n))
+# Time complexity: O(logn)
+
+
+# Single line
+def is_armstrong(num):
+    return sum(int(digit)**len(str(num)) for digit in str(num)) == num
+
+num=153
+print(is_armstrong(num))
