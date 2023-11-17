@@ -14,8 +14,8 @@
 def compound_interest(p, r, t):
  
     # Calculates compound interest
-    Amount = p* (pow((1 + r / 100), t))
-    CI = Amount - p
+    a = p* (pow((1 + r / 100), t))
+    CI =a-p
     print("Compound interest is", CI)
  
  
