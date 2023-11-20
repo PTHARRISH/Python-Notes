@@ -1,10 +1,4 @@
-# Introduction to OOPS concept:
-# Python supports both procedure-oriented and object-oriented features.
-# Object-Oriented Programming is a programming paradigm that uses classes and objects to look similar to real life. 
-# OOPs has four central concepts: Encapsulation,Abstraction, Inheritance, and Polymorphism.
-# OOPs mainly works upon two keys is Attributes and Functionality.
-
-# Python Class  :
+# Class:
 # Python is an object oriented programming language.
 # Almost everything in Python is an object, with its properties and methods.
 # A Class is like an object constructor, or a "blueprint" for creating objects.
@@ -65,16 +59,6 @@ print(emp1)# <__main__.employee object at 0x7fc5ca05bfd0> emp1 object memory add
 print(emp2)# <__main__.employee object at 0x7fc5ca05beb0> emp2 object memory address
 
 # Here emp1 and emp2 have unique employee classes
-
-# Python self  
-# Class methods must have an extra first parameter in the method definition. 
-# We do not give a value for this parameter when we call the method, Python provides it
-# If we have a method that takes no arguments, then we still have to have one argument.
-# This is similar to this pointer in C++ and this reference in Java.
-# When we call a method of this object as myobject.method(arg1, arg2), 
-# this is automatically converted by Python into MyClass.method(myobject, arg1, arg2) – 
-# this is all the special self is about.
-
 
 # Example for car class:
 

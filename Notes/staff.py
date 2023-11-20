@@ -11,11 +11,12 @@ class staff_personal_details:
         self.staff_details=[]
     
     def add_details(self,name,age,qualification,role,mobile_no):
-        return self.staff_details.append(staff(name,age,qualification,role,mobile_no))
+        self.staff_details.append(staff(name,age,qualification,role,mobile_no))
+        print(self.staff_details)
+        return self.staff_details
         
 
 
 staff1=staff_personal_details()
-staff1.add_details('harrish',18,'MCA','developer',9087654321)
-
+n=staff1.add_details('harrish',18,'MCA','developer',9087654321)
 

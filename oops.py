@@ -17,19 +17,6 @@ print(id(b))
 # Classes provide a means of bundling data and functionality together. 
 # Creating a new class creates a new type of object, allowing new instances of that type to be made.
 
-class employee: 
-    # class is a keyword to create a class. class name is employee
-    #if you create a empty class it shows an error so ypu need to put pass statement on it
-    pass
-
-emp1=employee()# each unique employee that we create using our employee class will be an instance of the class
-emp2=employee()
-print(emp1)# <__main__.employee object at 0x7fc5ca05bfd0> emp1 object memory address
-print(emp2)# <__main__.employee object at 0x7fc5ca05beb0> emp2 object memory address
-
-
-# object:
-# An object is called an instance of a class.here emp1 and emp2 have unique employee classes
 
 
 # pass: 
