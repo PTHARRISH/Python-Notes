@@ -1,4 +1,5 @@
-# Print all Prime numbers in an Interval using for loop
+# Print all Prime numbers in an Interval 
+# using for loop
 def prime_intervel(x,y):
     lst=[]
     for i in range(x,y):
