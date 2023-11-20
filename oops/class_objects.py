@@ -33,65 +33,72 @@ class employee:
 # Python Objects:
 # An object is called an instance of a class.
 # The object is an entity that has a state and behavior associated with it.
-# It may be any real-world object like a mouse, keyboard, chair, table, pen, etc. Integers, strings, floating-point numbers, even arrays, and dictionaries, are all objects. 
-# More specifically, any single integer or any single string is an object. 
-# The number 12 is an object, the string “Hello, world” is an object, a list is an object that can hold other objects, and so on. 
-# You’ve been using objects all along and may not even realize it.
-
-# An object consists of:
-# State: It is represented by the attributes of an object. It also reflects the properties of an object.
-# Behavior: It is represented by the methods of an object. It also reflects the response of an object to other objects.
-# Identity: It gives a unique name to an object and enables one object to interact with other objects.
-# To understand the state, behavior, and identity let us take the example of the class dog (explained above). 
-
-# The identity can be considered as the name of the dog.
-# State or Attributes can be considered as the breed, age, or color of the dog.
-# The behavior can be considered as to whether the dog is eating or sleeping.
 
 # Creating an Object
 # This will create an object named obj of the class employee defined above. 
-# Before diving deep into objects and classes let us understand some basic keywords that will we used while working with objects and classes.
+# Before diving deep into objects and classes 
+# let us understand some basic keywords that will we used while working with objects and classes.
 
 
 emp1=employee()# each unique employee that we create using our employee class will be an instance of the class
 emp2=employee()
+print("________________________________________")
+print("Class employee Output printing Instance memory address : ")
 print(emp1)# <__main__.employee object at 0x7fc5ca05bfd0> emp1 object memory address
 print(emp2)# <__main__.employee object at 0x7fc5ca05beb0> emp2 object memory address
-
+print("________________________________________")
 # Here emp1 and emp2 have unique employee classes
 
 # Example for car class:
+print("Class Car Output : ")
+class vehicle:
 
-class car:
-    def __init__(self,year_of_manufacture,model,top_speed,color):
+    no_of_wheels=0 # Global variable
+
+    def __init__(self,type_of_vehicle,name,year_of_manufacture,model,top_speed,color):
+        self.name=name
+        self.type= type_of_vehicle
         self.year_of_manufacture=year_of_manufacture
         self.model=model
         self.top_speed=top_speed
         self.color=color
         self.initial=0
-    
+        print(self.type)
+
+
+    # def vehicle_details(self): # You can pass and change global variable
+    #     global no_of_wheels # To modify global varible inside a function you need to declare (global keyword)
+    #     no_of_wheels= wheels # or no_of_wheels=4  
+    #     print("Local variable of no_of_wheels ",no_of_wheels) # print Local varible no_of_wheels
+    #     print("vehicle brand name is {1} the model of the vehicle is {0} and top speed of vehicle is {2} ".format(self.model,self.name,self.top_speed) )
+    #     print("Global variable no_of_wheels",self.no_of_wheels) # Print Global Variable inside a function you need to use self tag
+
     def start(self):
-        print('car started',self.initial) # here you no need to mention self in started_speed
+        print('vehicle started',self.initial) # here you no need to mention self in started_speed
     
     def speed_up(self,speed_up):
         self.initial+=speed_up
-        print('car speed is increased now car speed is ',self.initial)
+        print('vehicle speed is increased now vehicle speed is ',self.initial)
 
     def speed_down(self,speed_down):
         self.initial-=speed_down
-        print('car speed is reduced now car speed is ',self.initial)
+        print('vehicle speed is reduced now vehicle speed is ',self.initial)
     
     def stop(self):
         self.initial=0
-        print('car stopped')
+        print('vehicle stopped')
 
     
-mercedes=car('2018','ATVR','120mph','black')
+mercedes=vehicle('Car','mercedes','2018','ATVR','120mph','black')
+# mercedes.vehicle_details()
+print("vehicle Brand name is ",mercedes.name) # print Object variable (mercedes)
+# print("No of wheels in car is ",mercedes.__class__.no_of_wheels) # print Global variable outside the class (4)
 mercedes.start() # you can start speed and passed as an argument 
 mercedes.speed_up(10)
 mercedes.speed_up(10)
 mercedes.speed_down(10)
 mercedes.stop()
+print("________________________________________")
 
 
 
