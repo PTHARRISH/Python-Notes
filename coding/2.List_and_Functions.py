@@ -87,3 +87,22 @@ print(techs)
 user_ids = ['0111', '0101', '1030', '0101', '3401', '0111', '1001']
 user_ids.remove('0101') # use cannot use pop because it is str type it shows error 'str' object cannot be interpreted as an integer
 print(user_ids) # remove method will remove the str on it
+
+
+# 9. The following list is given:
+# user_ids = ['0111', '0101', '1030', '0101', '3401', '0111', '1001'] and the 
+# user_id variable: user_id = '1040'
+# When using the list.remove() method, attempting to remove a value that is not in the list results in a ValueError.
+# Try to remove the user_id value from the user_ids list using the list.remove() method. 
+# If the value is not in the list, print the following message to the console:
+# "User with id '1040' is not in the list."
+# Use try ... except ... clause in the solution.
+
+# Expected result: User with id '1040' is not in the list.
+
+user_ids = ['0111', '0101', '1030', '0101', '3401', '0111', '1001']
+user_id = '1040'
+try:
+    user_ids.remove(user_id)
+except ValueError:
+    print(f"User with id '{user_id}' is not in the list.")
