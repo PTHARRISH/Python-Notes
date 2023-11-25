@@ -79,3 +79,11 @@ result=techs.pop(1)
 print(result)
 print(techs)
 
+
+# 8. Using the appropriate method, delete the first encountered element '0101'.
+# In response, print the user_ids variable to the console.
+# Expected result: ['0111', '1030', '0101', '3401', '0111', '1001']
+
+user_ids = ['0111', '0101', '1030', '0101', '3401', '0111', '1001']
+user_ids.remove('0101') # use cannot use pop because it is str type it shows error 'str' object cannot be interpreted as an integer
+print(user_ids) # remove method will remove the str on it
