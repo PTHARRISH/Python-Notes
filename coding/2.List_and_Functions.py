@@ -197,3 +197,14 @@ except ValueError:
     print(f"User with id '{user_id}' is not in the list.")
 
 
+# 10. The following list is given:
+# techs = ['python', 'django', 'sql', 'html', 'css']
+# Use the del statement to remove penultimate item from the techs list.
+# In response, print the techs list to the console.
+
+
+# Expected output: ['python', 'django', 'sql', 'css']
+
+techs=['python', 'django', 'sql', 'html', 'css']
+del techs[-2] # del statement delete the particular element at the position negative index also support
+print(techs) 
