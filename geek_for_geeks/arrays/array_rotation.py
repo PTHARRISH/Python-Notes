@@ -1,5 +1,4 @@
 # Array Rotation
-
 def array_rotation(arr,n,d):
     temp=[]
     i=0
