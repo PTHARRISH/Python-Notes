@@ -53,27 +53,27 @@ print("Iterating over a list: ")
 print("List Iteration")
 l = ["geeks", "for", "geeks"]
 for i in l:
-	print(i)
-	
+    print(i)
+    
 # Iterating over a tuple (immutable)
 print("\nTuple Iteration")
 t = ("geeks", "for", "geeks")
 for i in t:
-	print(i)
-	
+    print(i)
+    
 # Iterating over a String
 print("\nString Iteration") 
 s = "Geeks"
 for i in s :
-	print(i)
-	
+    print(i)
+    
 # Iterating over dictionary
 print("\nDictionary Iteration") 
 d = dict() 
 d['xyz'] = 123
 d['abc'] = 345
 for i in d :
-	print("%s %d" %(i, d[i]))
+    print("%s %d" %(i, d[i]))
 
 print("-----------------------------------------------")
 
@@ -174,3 +174,64 @@ print("-----------------------------------------------")
 # After returning the last element, it raises the StopIteration error.
 
 # Implementing the __iter__() Method in Custom Class
+
+# The custom class can also be a collection class by implementing __iter__() and __next__() method 
+# to get an iterator object and use it with the for loop, as shown below.
+
+# __iter__() returns the iterator object itself. If required, some initialization can be performed.
+
+# __next__() must return the next item in the sequence. On reaching the end, and in subsequent calls, 
+# it must raise StopIteration.
+
+
+print("Implementing the __iter__() Method in Custom Class")
+
+class DataStore:
+    def __init__(self, data):
+        self.index = -1
+        self.data = data
+    def __iter__(self):
+        return self
+    def __next__(self):
+        if(self.index == len(self.data)-1):
+            raise StopIteration
+        else:
+            self.index +=1
+            return self.data[self.index]
+
+ds = DataStore([1,2,3,4,56])
+for i in ds:
+    print(i)
+
+
+# Using Sentinel Parameter
+# The sentinel parameter is used to indicate the end of the sequence. 
+# However, the class must be callable, which internally calls __next__() method. 
+# The following DataStore class is modified to demonstrate the use of the sentinel parameter 
+# by adding __call__ = __next__.
+
+# class Datastore:
+# 	def __init__(self, data):
+# 		self.index = -1
+# 		self.data = data
+# 	def __iter__(self):
+# 		return self
+# 	def __next__(self):
+# 		if(self.index == len(self.data)-1):
+# 		    raise StopIteration
+# 		self.index +=1
+# 		return self.data[self.index]
+# 	__call__ = __next__
+    
+# ds = Datastore([1,2,3])
+# itr = iter(ds, 3) # sentinel is 3, so it will stop when encounter 3
+    
+# for i in itr:
+# 	print(i) # 1 2
+
+
+
+# references
+# https://www.programiz.com/python-programming/iterator
+# https://www.geeksforgeeks.org/iterators-in-python/
+# https://www.tutorialsteacher.com/python/iter-method
