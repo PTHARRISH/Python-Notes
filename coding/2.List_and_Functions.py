@@ -257,3 +257,17 @@ del techs[1:-1] # starting and ending value only displayed
 print(techs)
 print("--------------------------------------------------------------------------")
 
+
+# 12.The following list is given: record = ['01302', 'esmartdata', ['python', 'sql', 'git', 'css'], 30000]
+# Iterate through the record list. If the object in the list is an instance of the list class, 
+# remove all of its items. In response, print the contents of the record list to the console.
+# Expected result: ['01302', 'esmartdata', [], 30000]
+
+print("12.If the Object in the list is an instance of the list class, remove all of its items")
+record = ['01302', 'esmartdata', ['python', 'sql', 'git', 'css'], 30000]
+
+for items in record:
+    if isinstance(items,list):
+        items.clear()
+print(record)
+print("--------------------------------------------------------------------------")
