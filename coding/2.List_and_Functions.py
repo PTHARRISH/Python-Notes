@@ -49,17 +49,27 @@ sub_list = my_list[1:4]  # Gets elements from index 1 to 3
 
 
 # Useful Methods
+
 # append(): Adds an element to the end of the list.
+
+# clear(): Remove all items from the list.
+
+# count(): Return the count of the number of items passed as an argument.
+
+# extend(): Add all element of a list to another list.
+
+# index(): Return the index of the first matched item.
 
 # insert(): Adds an element at a specific index.
 
+# pop(): Removes the element at a specific index.
+
 # remove(): Removes the first occurrence of a value.
 
-# pop(): Removes the element at a specific index.
+# reverse(): Reverses the list.
 
 # sort(): Sorts the list.
 
-# reverse(): Reverses the list.
 
 
 # Example:
