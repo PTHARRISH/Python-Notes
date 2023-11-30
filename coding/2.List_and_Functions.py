@@ -54,6 +54,8 @@ sub_list = my_list[1:4]  # Gets elements from index 1 to 3
 
 # clear(): Remove all items from the list.
 
+# copy(): Return a copy of the list. 
+
 # count(): Return the count of the number of items passed as an argument.
 
 # extend(): Add all element of a list to another list.
