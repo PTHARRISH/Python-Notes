@@ -267,7 +267,8 @@ print("12.If the Object in the list is an instance of the list class, remove all
 record = ['01302', 'esmartdata', ['python', 'sql', 'git', 'css'], 30000]
 
 for items in record:
-    if isinstance(items,list):
+    if isinstance(items,list): # here list is class if list class present in item object it will clear a list. you can use other classes like int,str,tuple
+        # isinstance is used to check the object in the list is an instance of the list class(object, class)
         items.clear()
 print(record)
 print("--------------------------------------------------------------------------")
