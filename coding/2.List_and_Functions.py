@@ -276,6 +276,7 @@ print("-------------------------------------------------------------------------
 
 
 # 13.The following list is given:
+
 cities = [
     'Istanbul',
     'Moscow',
