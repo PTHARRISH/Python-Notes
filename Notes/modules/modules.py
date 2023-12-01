@@ -193,3 +193,9 @@ print(time.time())
 
 # Converts a number of seconds to a date object
 print(date.fromtimestamp(454554)) 
+
+
+# references:
+# https://www.geeksforgeeks.org/python-modules/
+# https://www.programiz.com/python-programming/modules
+# https://www.tutorialsteacher.com/python/python-module
