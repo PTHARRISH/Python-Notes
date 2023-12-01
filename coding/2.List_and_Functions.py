@@ -272,3 +272,152 @@ for items in record:
         items.clear()
 print(record)
 print("--------------------------------------------------------------------------")
+
+
+
+# 13.The following list is given:
+cities = [
+    'Istanbul',
+    'Moscow',
+    'London',
+    'Saint Petersburg',
+    'Berlin',
+    'Madrid',
+]
+# Find the index for 'Berlin' city using the appropriate method. 
+# Then, using this index remove all elements to the end of the list, including the city named 'Berlin'.
+# In response, print the cities list to the console.
+# Expected result: ['Istanbul', 'Moscow', 'London', 'Saint Petersburg']
+
+cities_list=cities.index('Berlin')
+del cities[cities_list:]
+print(cities)
+print("--------------------------------------------------------------------------")
+
+
+# 14.The following list is given:
+countries = [
+    'Turkey',
+    'Russia',
+    'United Kingdom',
+    'Russia',
+    'Germany',
+    'Spain',
+    'Ukraine',
+    'Italy',
+    'France',
+    'Belarus',
+]
+# Use the appropriate method to find the number of occurrences of the word 'Russia' and print it on the console.
+# Expected result: 2
+
+print(countries.count('Russia'))
+print("--------------------------------------------------------------------------")
+
+
+# 15.The following lists are given:
+countries_top_10 = [
+    'Turkey',
+    'Russia',
+    'United Kingdom',
+    'Russia',
+    'Germany',
+    'Spain',
+    'Ukraine',
+    'Italy',
+    'France',
+    'Belarus',
+]
+
+countries_next_5 = [
+    'Austria',
+    'Germany',
+    'Romania',
+    'Poland',
+    'Hungary'
+]
+# Using the list.copy() method, make a shallow copy of the countries_top_10 list and assign it to the countries variable. Then, using the appropriate method, extend the countries list with the elements from the countries_next_5 list.
+# In response, print the countries list to the console.
+# Expected result:
+# ['Turkey', 'Russia', 'United Kingdom', 'Russia', 'Germany', 'Spain', 'Ukraine', 'Italy', 'France', 'Belarus', 'Austria', 'Germany', 'Romania', 'Poland', 'Hungary']
+
+
+countries=countries_top_10.copy()
+countries.extend(countries_next_5)
+print(countries)
+print("--------------------------------------------------------------------------")
+
+
+# 16.The following list is given:
+countries = [
+    'Turkey',
+    'Russia',
+    'United Kingdom',
+    'Russia',
+    'Germany',
+    'Spain',
+    'Ukraine',
+    'Italy',
+    'France',
+    'Belarus',
+]
+
+# Using the appropriate method, make a shallow copy of the countries list and assign it to the countries_copy variable. Then, using the appropriate method, reverse the order of elements in the countries_copy list. In response, print the index for the country named 'Italy' (countries_copy list) to the console.
+# Expected result: 2
+
+countries_copy=countries.copy()
+countries_copy.reverse()
+print(countries_copy.index('Italy'))
+print("--------------------------------------------------------------------------")
+
+
+
+# 17.The following list is given:
+countries = [
+    'Turkey',
+    'Russia',
+    'United Kingdom',
+    'Russia',
+    'Germany',
+    'Spain',
+    'Ukraine',
+    'Italy',
+    'France',
+    'Belarus',
+]
+
+# Using the appropriate method, sort the elements of the countries list in ascending order.
+# In response, print the first three items of the list to the console.
+# Expected result: ['Belarus', 'France', 'Germany']
+
+countries.sort()
+print(countries[:3])
+print("--------------------------------------------------------------------------")
+
+
+# 18.The following list is given:
+
+countries = [
+    'Turkey',
+    'Russia',
+    'United Kingdom',
+    'Russia',
+    'Germany',
+    'Spain',
+    'Ukraine',
+    'Italy',
+    'France',
+    'Belarus',
+]
+# Convert this list to the form below:
+# ['SPA', 'ITA', 'FRA', 'UNI', 'BEL', 'TUR', 'GER', 'UKR', 'RUS', 'RUS']
+# and assign to codes variable. (first three capital letters of the country name).
+# Then sort in ascending order according to the last letter of the country code. In response, print this sorted list to the console.
+# Expected result: ['SPA', 'ITA', 'FRA', 'UNI', 'BEL', 'TUR', 'GER', 'UKR', 'RUS', 'RUS']
+
+codes=[countries1[:3].upper() for countries1 in countries]
+codes.sort(key=lambda code:code[-1])
+print(codes)
+print("--------------------------------------------------------------------------")
+
+
