@@ -1,4 +1,4 @@
-# reverse-words-in-a-given-string
+# reverse-words-in-a-given-sentence(geekforgeeks)
 # using inbuilt function
 string=input()
 j=""
