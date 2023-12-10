@@ -85,7 +85,7 @@ class student(person):
 std = student('Harrish','PT', '16')
 std.display_details()
 
-
+print("----------------------------------------------------------------------------------------")
 # In the above example, 
 # super().__init__(firstname, lastname) in the init method of the student class call's the base class person's init method and pass parameters. 
 # In the same way, super().fullname() calls person.fullname() method. 
