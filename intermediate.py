@@ -14,6 +14,7 @@
 # print(ftoc)
 # ftok=ftoc+273.15
 # print(ftok)
+
 # 2.1
 # celisus=float(input("enter the celisus: "))
 # ctof=(celisus*1.8)+32
