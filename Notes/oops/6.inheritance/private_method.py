@@ -23,6 +23,13 @@ class Base:
    # Defining the private method
    def __priv(self):
       print("This is Private method")
+   
+   # Here You can call the private method inside a another public methods in a class
+   def call_priv(self):
+   # Calling private method of base class
+      self.__priv()
+
+   
 # Now we are creating the derived class for calling the priivate and public methods created in the base class.
 class Derived(Base):
    def __init__(self):
@@ -31,13 +38,23 @@ class Derived(Base):
    # Calling public method from base class
       print("\nInside derived class")
       self.pub()
+      
    def call_priv(self):
    # Calling private method of base class
       self.__priv()
         
 out = Base()
 # Calling public method
-out.pub()
-out2 = Derived()
-out2.call_pub()
+out.pub() # base class public class method
+# out.__priv() # AttributeError: 'Base' object has no attribute '__priv'  Error occurs
+out.call_priv() # This method call_priv call the private method
+
+out2 = Derived() # create an object for derived class
+out2.call_pub() # call derived class public method
+# out2.call_priv() # AttributeError: 'Derived' object has no attribute '_Derived__priv' Error occurs
+
+
+# print("Using the concept of name mangling")
+# out2._call_priv()
+
 
