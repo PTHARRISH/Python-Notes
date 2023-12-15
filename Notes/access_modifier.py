@@ -58,56 +58,69 @@ print('------------------------------------------------------------')
 # Any attempt to do so will result in an AttributeError:
 
 print('-------------Private Access Modifier------------------------')
-class Student:
-    __schoolName = 'XYZ School' # private class attribute
+# Example for Private Modifier:
+# The Class BankAccount is being declared with two private variables 
+# i.e account_number and balance and a private property display_balance which prints the balance of the bank account. 
+# As both the properties and method are private so while accessing them from outside the class it raises Attribute error.
 
-    def __init__(self, name, age):
-        self.__name=name  # private instance attribute
-        self.__age=age # private instance attribute
+class Bank:
+    __HolderName = 'XYZ' # private class attribute
+
+    def __init__(self,acc_no,balance):
+        self.__account_no=acc_no  # private instance attribute
+        self.__balance=balance # private instance attribute
 
     # private member function    
     def __display(self):  
 	    print('This is private method.')
     
     # private member function  
-    def __displayDetails(self):
+    def __display_balance(self):
         # accessing private data members
-        print("Name: ", self.__name)
-        print("Roll: ", self.__age)
+        print("Bank Account_number: ", self.__account_no)
+        print("Bank Balance: ", self.__balance)
 
     # public member function
     def accessPrivateFunction(self):
         print("Private method in public member function and display a private details")        
         # accessing private member function
         self.__display()
-        self.__displayDetails()  
-        print('Private in public method : ',self.__schoolName) # print private varible 
+        self.__display_balance()  
+        print('Private in public method : ',self.__HolderName) # print private varible 
  
 
-std = Student("Harrish", 25)
-# print(std.__schoolName) #AttributeError
-# print(std.__name)   #AttributeError
-# print(std.__display())  #AttributeError
-# print(std.__displayDetails())#AttributeError
-std.accessPrivateFunction()
+bnk = Bank("0987654321", 25000)
+# print(bnk.__HolderName) #AttributeError
+# print(bnk.__account_no)   #AttributeError
+# print(bnk.__display())  #AttributeError
+# print(bnk.__display_balance())#AttributeError
+bnk.accessPrivateFunction()
 
-# In the above program, __name and __age are private members, __displayDetails(), __display method is a private
+# In the above program, __account_no and __balance are private members, __display_balance(), __display method is a private
 # member function (these can only be accessed within the class) and accessPrivateFunction() 
-# method is a public member function of the class Student which can be accessed from anywhere within the program. 
-# The accessPrivateFunction() method accesses the private members of the class Student.
+# method is a public member function of the class Bank which can be accessed from anywhere within the program. 
+# The accessPrivateFunction() method accesses the private members of the class Bank.
 print('------------------------------------------------------------')
-print('name mangling to print Private variables and method: ')
-print(std._Student__name)  #'Harrish'
-std._Student__name = 'Steve' # change the private variable
-print(std._Student__schoolName) #'XYZ School'
-std._Student__displayDetails() # display private method
+print('name mangling of Private variables and method: ')
+print(bnk._Bank__account_no)  #'0987654321'
+bnk._Bank__account_no = 1234567890 # change the private variable
+print(bnk._Bank__HolderName) #'Harrish'
+bnk._Bank__display_balance() # display private method
 
 # Name Mangling:
 # Python performs name mangling of private variables. 
 # Every member with a double underscore will be changed to _object._class__variable. 
 # So, it can still be accessed from outside the class, but the practice should be refrained.
-
-
 print('------------------------------------------------------------')
 
+
+
+# Protected Members
+# Protected members of a class are accessible from within the class and are also available to its sub-classes. 
+# No other environment is permitted access to it. 
+# This enables specific resources of the parent class to be inherited by the child class.
+# Python's convention to make an instance variable protected is to add a prefix _ (single underscore) to it. 
+# This effectively prevents it from being accessed unless it is from within a sub-class.
+
+print('---------------Protected Access Modifier--------------------')
 
