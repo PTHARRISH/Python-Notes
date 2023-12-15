@@ -39,7 +39,7 @@ class student:
 
 stu=student('Harrish',22)
 stu.display() # calling public member function of the class
-print("--------------outside the class--------------")
+print("---------------------outside the class---------------------")
 print(stu.name) # accessing public data member
 print(stu.schoolName) # class attribute or global varible
 stu.age=21 # modify the public varible 
@@ -101,9 +101,9 @@ bnk.accessPrivateFunction()
 # member function (these can only be accessed within the class) and accessPrivateFunction() 
 # method is a public member function of the class Bank which can be accessed from anywhere within the program. 
 # The accessPrivateFunction() method accesses the private members of the class Bank.
-print('------------------------------------------------------------')
+print('-----------------------------------------------')
 print('name mangling of Private variables and method: ')
-print("--------------outside the class--------------")
+print("---------------outside the class---------------")
 print(bnk._Bank__account_no)  #'0987654321'
 bnk._Bank__account_no = 1234567890 # change the private variable
 print(bnk._Bank__HolderName) #'Harrish'
@@ -168,7 +168,7 @@ print(s._name) # display name : "Harrish PT"
 # However, you can define a property using property decorator and make it protected, as shown below.
 
 # Example: Protected Attributes
-
+print('---------------Protected Using @property decorator--------------------')
 class Student:
     _name=None
     _age=None
@@ -186,10 +186,12 @@ class Student:
         return self._name
 
 std=Student("Harrish",22)
+print("--------------outside the class--------------")
 print(std._name) # Harrish
+print("-------------@property decorator-------------")
 std.names="Harrish PT" # obj.function name= value
 print(std._name)
-
+print("---------------------------------------------")
 # Above, @property decorator is used to make the names() method as property and @names.
 # setter decorator to another overloads of the names() method as property setter method. 
 # Now, _name is protected.
@@ -198,3 +200,62 @@ print(std._name)
 # Hence, the responsible programmer would refrain from accessing and modifying instance variables 
 # prefixed with _ from outside its class.
  
+
+#  Example program for three access modifiers (public, protected, and private) of a class in Python: 
+print("--Example program for three access modifiers--")
+class Bank:
+
+    name=None # Public attribute
+    _account_no=None # Protected attribute
+    __balance=None # Private attribute
+
+    def __init__(self,name,account_no,balance):
+        self.name=name
+        self._account_no=account_no
+        self.__balance=balance
+    
+    # Display Public method and Public variable.
+    def display(self):
+        print("Name: ",self.name)
+        
+    # Display Protected method and Protected variable.
+    def _display_protected(self):
+        print("account no: ",self._account_no)
+    
+    # Display Private method and Private variable.
+    def __display_private(self):
+        print("Balance: ",self.__balance)
+        
+    # Display Private variable in Public method.   
+    def accessprivatefunction(self):
+        self.__display_private()
+
+class Person(Bank):
+
+    def __init__(self, name, account_no, balance,branch):
+        super().__init__(name, account_no, balance)
+        self.__branch=branch # Private variable
+        
+    def profile(self):
+        self.display() # call base class function print public variable
+        self.accessprivatefunction() # call base class public function print private variable
+        self._display_protected() # call base class function print public variable
+
+    def accessprivate(self):
+        print("branch: ",self.__branch) # print private variable
+
+obj=Person("Harrish PT",123334087,123,"SVKS")
+print("--------Print all variable using functions--------")
+obj.profile() # print all account details.
+obj.accessprivate() # Access and print Private variable using function .
+print("-------Modify all variable outside a class--------")
+obj.name="Hash"  # Access Public variable.
+obj._account_no=12344556  # Access Protected variable.
+obj._Bank__balance=1233  # Access Private variable.
+print("Name: ",obj.name) # Print Public variable.
+print("Account_no: ",obj._account_no) # Print Protected variable.
+print("Balance: ",obj._Bank__balance) # Print Private variable using name mangling.
+print("Branch: ",obj._Person__branch) # Print Private variable using name mangling.
+print("--------------------------------------------------")
+
+        
