@@ -39,6 +39,7 @@ class student:
 
 stu=student('Harrish',22)
 stu.display() # calling public member function of the class
+print("--------------outside the class--------------")
 print(stu.name) # accessing public data member
 print(stu.schoolName) # class attribute or global varible
 stu.age=21 # modify the public varible 
@@ -102,11 +103,13 @@ bnk.accessPrivateFunction()
 # The accessPrivateFunction() method accesses the private members of the class Bank.
 print('------------------------------------------------------------')
 print('name mangling of Private variables and method: ')
+print("--------------outside the class--------------")
 print(bnk._Bank__account_no)  #'0987654321'
 bnk._Bank__account_no = 1234567890 # change the private variable
 print(bnk._Bank__HolderName) #'Harrish'
 bnk._Bank__display_balance() # display private method
 
+# Read a Name Mangling :
 # Name Mangling:
 # Python performs name mangling of private variables. 
 # Every member with a double underscore will be changed to _object._class__variable. 
@@ -124,3 +127,74 @@ print('------------------------------------------------------------')
 
 print('---------------Protected Access Modifier--------------------')
 
+
+# Example
+# The Person class has two protected properties i.e _name and _age and a protected method _display that 
+# displays the values of the properties of the person class. 
+# The student class is inherited from Person class with an additional property 
+# i.e _roll_number which is also protected and a public method display that class the _display 
+# method of the parent class 
+# i.e Person class by creating an instance of the Student class we can call the display method from 
+# outside the class as the display method is private which calls the protected _display method of Person class.
+
+class Person: # parent class
+   def __init__(self, name, age):
+      self._name = name # Protected attribute
+      self._age = age # Protected attribute
+    
+    # Protected method
+   def _display(self): 
+      print("Name:", self._name)
+      print("Age:", self._age)
+
+class Student(Person): # child class
+   def __init__(self, name, age, roll_number):
+      super().__init__(name, age) # or ypu can use Person.__init__(self,name,age) 
+      self._roll_number = roll_number # Protected attribute
+    
+   def display(self):
+      self._display() # accessing protected member function
+      print("Roll Number:", self._roll_number)
+
+s = Student("Harrish", 22, 16)
+s.display() # Name: Harrish Age: 22 Roll Number: 16
+print("--------------outside the class--------------")
+print(s._roll_number) # display roll no :16
+s._name="Harrish PT"
+print(s._name) # display name : "Harrish PT"
+
+
+# Read Property Decorator
+# However, you can define a property using property decorator and make it protected, as shown below.
+
+# Example: Protected Attributes
+
+class Student:
+    _name=None
+    _age=None
+    def __init__(self,name,age):
+        self._name=name
+        self._age=age
+    
+    @property
+    def names(self):
+        return self._name
+    
+    @names.setter
+    def names(self,new_name):
+        self._name=new_name
+        return self._name
+
+std=Student("Harrish",22)
+print(std._name) # Harrish
+std.names="Harrish PT" # obj.function name= value
+print(std._name)
+
+# Above, @property decorator is used to make the names() method as property and @names.
+# setter decorator to another overloads of the names() method as property setter method. 
+# Now, _name is protected.
+# we used std.name property to modify _name attribute. 
+# However, it is still accessible in Python. 
+# Hence, the responsible programmer would refrain from accessing and modifying instance variables 
+# prefixed with _ from outside its class.
+ 
