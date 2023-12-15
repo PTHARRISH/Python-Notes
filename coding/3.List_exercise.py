@@ -351,8 +351,9 @@ population = [
 # ('Kyiv', 'Ukraine', 2950800)
 # ('London', 'United Kingdom', 9126366)
 print("19.Sort the population list alphabetically by country name")
-population.sort(key=lambda row: row[1])
+population.sort(key=lambda row: row[1]) # row[1]->index[1] country name will pass in key lambda
 for i in population:
     print(i)
 
 print("--------------------------------------------------------------------------")
+

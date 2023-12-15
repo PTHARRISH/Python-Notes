@@ -56,7 +56,7 @@ class vehicle:
     no_of_wheels=0 # Global variable
 
     def __init__(self,type_of_vehicle,name,year_of_manufacture,model,top_speed,color):
-        self.name=name
+        self.name=name # instance variable
         self.type= type_of_vehicle
         self.year_of_manufacture=year_of_manufacture
         self.model=model
