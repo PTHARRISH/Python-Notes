@@ -139,7 +139,7 @@ class vehicle(ABC):
         self.no_of_types=n
     
     @abstractmethod
-    def start(self):
+    def start(self): # same method name and same argument will passed in all the child class TypeError: scooty.start() takes 1 positional argument but 2 were given
         # print("no start")
         pass
 
