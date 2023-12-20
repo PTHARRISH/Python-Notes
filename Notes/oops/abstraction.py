@@ -71,7 +71,7 @@ class demo(ABC):
 # The demo class here may be used as parent for another class. However, the child class must override the abstract method in parent class. 
 # If not, Python throws this error −TypeError: Can't instantiate abstract class concreteclass with abstract method method1
 # Hence, the child class with the abstract method overridden is given in
-
+print("-----------------------------Demo Example-----------------------------")
 from abc import ABC,abstractmethod
 class democlass(ABC):
     @abstractmethod
@@ -94,7 +94,7 @@ obj.method2() # this is abstract method this is concrete method
 
 
 # Example -
-
+print("-----------------------------Abstraction Car Class Example-----------------------------")
 # Python program demonstrate  
 # abstract base class work   
 from abc import ABC, abstractmethod   
@@ -132,19 +132,22 @@ d.mileage()
 
 
 # Example for Abstract 
-
+print("-----------------------------Abstraction Vehicle Class Example-----------------------------")
 from abc import ABC, abstractmethod
 class vehicle(ABC):
     def __init__(self,n):
         self.no_of_types=n
     
     @abstractmethod
-    def start(self): # same method name and same argument will passed in all the child class TypeError: scooty.start() takes 1 positional argument but 2 were given
+    def start(self): 
+        # same method name and same argument will passed in all the child class 
+        # TypeError: scooty.start() takes 1 positional argument but 2 were given
+        # every sub class are follow the rules
         # print("no start")
         pass
 
     def display(self):
-        print("Hi I am calling from vehicle class")
+        print("There are "+str(self.no_of_tyres)+" in the vehicle")
 
 class scooty(vehicle):
     def __init__(self,n,color):
@@ -175,10 +178,14 @@ class car(vehicle):
 
 scooty=scooty(2,'blue')
 scooty.start()
+scooty.display()
 
 bike=bike(2)
 bike.start()
+bike.display()
 
 car=car(4,6)
 car.start()
 car.display()
+
+print("-------------------------------------------------------------------------------------------")
