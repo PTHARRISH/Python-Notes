@@ -3,6 +3,7 @@
 # The users only interact with the basic implementation of the function, but inner working is hidden. 
 # User is familiar with that "what function does" but they don't know "how it does."
 
+# Real-World Example
 # In simple words, we all use the smartphone and very much familiar with its functions such as camera,
 # voice-recorder, call-dialing, etc., 
 # but we don't know how these operations are happening in the background. 
@@ -151,7 +152,8 @@ class vehicle(ABC):
 
 class scooty(vehicle):
     def __init__(self,n,color):
-        super().__init__(n)
+        # super method call the base __init__ assign 'n' variable to self.no_of_types=n
+        super().__init__(n) 
         self.color=color
         self.no_of_tyres=n
     
