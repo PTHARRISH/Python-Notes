@@ -1,18 +1,17 @@
 # Name mangling in Python
 # Private attributes can be only accessible from the methods of the class. 
-# In other words, they cannot be accessible from outside of the class.
+# In other words, all attributes are accessible from the outside of a class.
 # Python doesn’t have a concept of private attributes. 
 
-# In other words, all attributes are accessible from the outside of a class.
-
-# By convention, you can define a private attribute by prefixing a double underscore (__):
 
 # Name mangling with double underscores.
-# If you prefix an attribute name with double underscores (__) like this:
+# By convention, you can define a private attribute by prefixing a double underscore (__):
 
-# __attribute
+# If you prefix an attribute name with double underscores (__) like this: __attribute
+
 # Python will automatically change the name of the __attribute to: _class__attribute
 # This is called the name mangling in Python.
+
 # By doing this, you cannot access the __attribute directly from the outside of a class like:
 
 # instance.__attribute
