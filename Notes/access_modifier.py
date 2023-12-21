@@ -91,6 +91,8 @@ class Bank:
  
 
 bnk = Bank("0987654321", 25000)
+# bnk.__account_no=982625 # assign value modified in outside the class
+# print("Bank Account number assign outside the class: ",bnk.__account_no) # print the outside private variable
 # print(bnk.__HolderName) #AttributeError
 # print(bnk.__account_no)   #AttributeError
 # print(bnk.__display())  #AttributeError
