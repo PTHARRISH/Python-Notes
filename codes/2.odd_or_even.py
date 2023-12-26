@@ -1,4 +1,4 @@
-# odd_or_even_without_%_operator
+# odd_or_even
 # Method 1 : Using Brute Force
 # This method simply checks if the given input integer is divisible by 2 or not. If it’s divisible then print Even or Odd otherwise.
 num=int(input('enter the num: '))
@@ -13,7 +13,7 @@ else:
 print("Even") if num%2 == 0 else print("Odd")
 
 
-# Method 3 : Using Bitwise Operator
+# Method 3 : Using Bitwise Operator without % operator
 # This Method uses bitwise operators to check if a given number is Even or Odd.
 def odd_or_even(n):
     if n&1==1:

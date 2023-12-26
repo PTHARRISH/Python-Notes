@@ -21,6 +21,7 @@ def remove_vowels(sentence):
 sentence=input("enter the sentence: ")
 remove_vowels(sentence)
 
+
 # 3 using regular expression
 import re
 def remove_vowels(sentence):
