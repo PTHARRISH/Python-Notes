@@ -2,8 +2,8 @@
 # Rotate the array to the left (counter-clockwise direction) by D steps, where D is a positive integer. 
 def rotated_array(arr,D,N):
     D=D%N #2%5=2 and if 10%5=0 then it will add in D value
-    print(N)
-    print(D)
+    # print(N)
+    # print(D)
     arr[:]=arr[D:]+arr[:D]
     return arr
 
