@@ -124,20 +124,53 @@ print("-------------------------------------------------------------------------
 
 my_list.reverse()
 print("Reversing element in a list: ",my_list)
+# ['H', [2, 3], 2, 1, 7, 8, 9, 0, 100, 6, 5, 4, 3, 1, 0] list is reversed
+print("------------------------------------------------------------------------------------------")
+
+
+
+# sort(): Sorts the list.
+# we can sort according to reverse of default natural sorting order by using reverse=True argument.
+# Here you can only sort the list of int only or str data only.
+# syntax: list_name.sort(reverse=True) argument is optional.
+# my_list=[1,2,3,'a','d','c'] # TypeError: '<' not supported between instances of 'str' and 'int' # invalid
+# my_list=[1,2,3,[1,2]] # TypeError: '<' not supported between instances of 'list' and 'int' # invalid
+my_list=[1,0,-1,8,2,3] # valid
+# my_list=['a','d','c'] # valid
+my_list.sort()
+print("Sorting element in a list: ",my_list)
+my_list.sort(reverse=True)
+print("Sorting element in a list reverse argument: ",my_list)
+print("------------------------------------------------------------------------------------------")
+
+
+
+# count(): Return the count of the number of items passed as an argument.
+my_list=[1,0,-1,8,2,3,1,0,-9] # valid
+print("Counting element in a list: ",my_list.count(1))
+my_list=['a','d','c','a','a'] # valid
+print("Counting element in a list: ",my_list.count('a'))
+print("------------------------------------------------------------------------------------------")
+
+
+
+# copy(): Return a copy of the list. 
+# syntax: list_name2=list_name.copy()
+# Shallow Copy and Deep Copy
+# A deep copy is a copy of a list, where we add an element in any of the lists, only that list is modified. 
+# In list copy() method, changes made to the copied list are not reflected in the original list. 
+# The changes made to one list are not reflected on other lists except for in nested elements (like a list within a list).
+
 
 # clear(): Remove all items from the list.
 
 
 
 
-# copy(): Return a copy of the list. 
-
-# count(): Return the count of the number of items passed as an argument.
 
 
 
 
 
-# sort(): Sorts the list.
 
 
