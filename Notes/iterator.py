@@ -191,7 +191,7 @@ class DataStore:
         self.index = -1
         self.data = data
     def __iter__(self):
-        return self
+        return self # convert iterator object
     def __next__(self):
         if(self.index == len(self.data)-1):
             raise StopIteration
