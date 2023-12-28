@@ -10,3 +10,5 @@ x.remove(86)
 print(x)
 
 
+# Task 2: Print combination without repeated letters
+
