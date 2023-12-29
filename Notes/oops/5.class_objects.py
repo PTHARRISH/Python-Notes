@@ -21,6 +21,27 @@
 
 # Objects are real-world entities while classes are not real.
 
+# The definition of class is given below.
+
+# class class_name:
+#     Statement1_class
+#     Statement2_class
+#     Statement3_class
+#     ………………………….
+#     Statementn_class
+
+# The statement in the class consists of either data or function.
+
+# Class class_name:
+#     Statements_classbody
+#     def function_name(argument_list):
+#         Statement_1
+#         Statement_2
+#         …………………..
+#         Statement_n
+# statements_classbody
+
+
 # Creating an Empty Class in Python
 # In the below example, we have created a class named employee using the class keyword.
 
@@ -30,9 +51,12 @@ class employee:
     pass
 
 
+
+print("----------------------------Objects------------------------------")
 # Python Objects:
 # An object is called an instance of a class.
 # The object is an entity that has a state and behavior associated with it.
+
 
 # Creating an Object
 # This will create an object named obj of the class employee defined above. 
@@ -42,12 +66,56 @@ class employee:
 
 emp1=employee()# each unique employee that we create using our employee class will be an instance of the class
 emp2=employee()
-print("________________________________________")
 print("Class employee Output printing Instance memory address : ")
 print(emp1)# <__main__.employee object at 0x7fc5ca05bfd0> emp1 object memory address
 print(emp2)# <__main__.employee object at 0x7fc5ca05beb0> emp2 object memory address
-print("________________________________________")
 # Here emp1 and emp2 have unique employee classes
+
+
+# In python, objects for classes can be created in two different ways. They are
+#   ● Attribute referencing
+#   ● instantiation.
+
+
+print("-------------------Attribute Referencing----------------------")
+# Attribute Referencing
+# In attribute referencing, Python class properties can be accessed by using the class name itself. 
+# The syntax of the attribute referencing is
+# class_name.propertyname
+
+# Example
+class ex:
+    x=[]
+ex.x=input("Enter the value of member x: ") # Attribute Referencing
+print("The value of ex.x is = ", ex.x)
+
+
+print("-----------------------Instantiation---------------------------")
+# Instantiation
+# During the instantiation process, an empty object is created and this object is assigned with the given object name. 
+# The syntax for the class instantiation is:  object_name = classs_name()
+
+# After creating the class instantiation, the properties of the class are accessed with the following syntax
+# object_name.propertyname
+# Example
+
+class ex:
+    x=[]
+a=ex()
+a.x=input("Enter the value of member x: ") # Instantiation
+print("The value of a.x is = ", a.x)
+print("----------------------------------------------------------------")
+
+# Example
+# An example code for a class with members is given below.
+class ex:
+    x=100
+    y="abcdefgh"
+print("Member value of x=", ex.x)
+print("Member value of y=", ex.y)
+
+print("----------------------------------------------------------------")
+
 
 # Example for car class:
 print("Class Car Output : ")
@@ -98,7 +166,7 @@ mercedes.speed_up(10)
 mercedes.speed_up(10)
 mercedes.speed_down(10)
 mercedes.stop()
-print("________________________________________")
+print("----------------------------------------------------------------")
 
 
 
