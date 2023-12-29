@@ -13,29 +13,46 @@
 # at the time of Object creation. 
 # It is run as soon as an object of a class is instantiated. 
 # The method is useful to do any initialization you want to do with your object.
+# The constructor method should always take the self pointer as the first argument. 
+# The remaining arguments will be passed during the object creation. 
 
 # Constructors are generally used for instantiating an object. 
 # The task of constructors is to initialize(assign values)
 # to the data members of the class when an object of the class is created. 
 # In Python the __init__() method is called the constructor and is always called when an object is created.
+
 # Syntax of constructor declaration : 
 
 def __init__(self):
     pass
     # body of the constructor
 
+
 # Types of constructors : 
 # default constructor: 
 # The default constructor is a simple constructor which doesn’t accept any arguments. 
 # Its definition has only one argument which is a reference to the instance being constructed.
 
+
 # parameterized constructor: 
 # constructor with parameters is known as parameterized constructor. 
 # The parameterized constructor takes its first argument as a reference 
 # to the instance being constructed known as self and the rest of the arguments are provided by the programmer.
-print("__________________________________________________________")
+
+
+# Example:
+class ex:
+	def __init__(self, arg):
+		self.a=arg
+obj=ex(300)
+print("Value defined by the constructor=", obj.a)
+# Output:
+# Value defined by the constructor= 300
+
+
+print("-----------------------------------------------------------------------------")
 print(" Example for Types of Constructor ")
-print("__________________________________________________________")
+print("-----------------------------------------------------------------------------")
 class MyClass:
 	def __init__(self, name=None):
 		if name is None:
@@ -62,7 +79,7 @@ obj2 = MyClass("John") # Parameterized constructor called with name
 # Call a method of the class
 obj2.method()  # 'Method called with name', 'John'
 
-print("__________________________________________________________")
+print("-----------------------------------------------------------------------------")
 
 # __init__ with inheritance
 # Inheritance is the capability of one class to derive or inherit the properties from some other class. 
@@ -70,7 +87,7 @@ print("__________________________________________________________")
 
 
 print("Python program to demonstrate init with inheritance")
-print("__________________________________________________________")
+print("-----------------------------------------------------------------------------")
 class A(object):
 	def __init__(self, something):
 		print("A init called")
@@ -83,11 +100,11 @@ class B(A):
 		A.__init__(self, something)
 		print("B init called")
 		self.something = something
+		print(self.something)
 
 
 obj = B("Something")
 
-print("__________________________________________________________")
 
 
 # Advantages of using constructors in Python:
@@ -123,3 +140,31 @@ print("__________________________________________________________")
 # Overall, constructors in Python can be useful for initializing objects and enforcing encapsulation. 
 # However, they may not always be necessary and are limited in their functionality compared to constructors in other programming languages.
 
+
+print("-------------------------------Destructor-------------------------------------")
+# Destructor
+# In python programming, the __del__() method will be executed during objects get destroyed. 
+# When a program is finished execution, all the objects are managed by memory management automatically. 
+# The __del__() method is called when all references to the object have been deleted.
+
+# Example:
+class ex:
+	def __init__(self, arg):
+		self.a=arg
+	def __del__(self):
+		print("Object is deleted.")
+
+obj=ex(300)
+print("Value defined by the constructor=", obj.a)
+# del obj # If you not call __del__ it automatically call atlast of the program
+print("-----------------------------------------------------------------------------")
+
+class sample:
+    def __init__(self, n):
+        self.a=n
+        print(self.a, "object created", end=" ")
+    def __del__(self):
+        print(self.a, "object deleted", end=" ")
+obj1=sample(1)
+obj2=sample(2)
+print("-----------------------------------------------------------------------------")
