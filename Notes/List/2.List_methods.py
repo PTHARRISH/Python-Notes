@@ -160,10 +160,20 @@ print("-------------------------------------------------------------------------
 # A deep copy is a copy of a list, where we add an element in any of the lists, only that list is modified. 
 # In list copy() method, changes made to the copied list are not reflected in the original list. 
 # The changes made to one list are not reflected on other lists except for in nested elements (like a list within a list).
+list1=my_list.copy()
+list1[1]='hai'
+print("Copying element in the old list:",my_list) # ['a', 'd', 'c', 'a', 'a']
+print("Copying element in the old list and replacing new element: ",list1) # ['a', 'hai', 'c', 'a', 'a']
+print("------------------------------------------------------------------------------------------")
+
 
 
 # clear(): Remove all items from the list.
-
+# syntax: list_name.clear()
+print("Before clearing element in the list: ",my_list) # ['a', 'd', 'c', 'a', 'a']
+my_list.clear()
+print("After Clear element in the list: ",my_list) #  []
+print("------------------------------------------------------------------------------------------")
 
 
 
