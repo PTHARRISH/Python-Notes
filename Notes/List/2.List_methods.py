@@ -9,10 +9,13 @@ print("-------------------------------------------------------------------------
 # append(): Adds an element to the end of the list.
 # syntax:
 # list_name.append(values) # append any type of data
-
+lst=[1,2,3,4]
 my_list.append(6)
-print("Appending element in a list: ",my_list)  # 
+print("Appending element in a list: ",my_list)  
 # [10, 2, 3, 4, 5, 6] # 6 is appended
+lst.append((5, 6))
+print("\nList after Addition of a Tuple: ",lst)
+# [1, 2, 3, 4, (5, 6)]
 print("------------------------------------------------------------------------------------------")
 
 
@@ -68,7 +71,8 @@ print("Extending elements in a Nested list: ",my_list)
 #  [0, 1, 2, 3, 99, 4, 5, 6, 100, 0, 9, 8, 7, 1, 2, 3, [2, 3]] # [2,3] nested list added
 
 my_list.extend("HI")
-print("Extending elements in a list: ",my_list) 
+print("Extending elements in a list: ",my_list)
+print("Nested list elements in a list: ",my_list[16][0]) 
 # [0, 1, 2, 3, 99, 4, 5, 6, 100, 0, 9, 8, 7, 1, 2, 3, [2, 3], 'H', 'I'] # 'H','I' added
 print("------------------------------------------------------------------------------------------")
 
