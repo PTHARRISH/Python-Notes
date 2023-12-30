@@ -22,14 +22,35 @@ print("-----------------------------------------------------------")
 # Creation of Lists object
 # You can create a list by enclosing its elements in square brackets [], separated by commas:
 
+# 1.
+my_list = []
+print("creating the empty list",my_list)
+
+
+# 2. 
 my_list = [1, 2, 3, 4, 5]
 print(my_list) # [1, 2, 3, 4, 5]
 print("print the type of my_list",type(my_list)) # <class 'list'>
 
 # Or you can create an empty list and then add elements to it later:
 
-my_list = []
-print("creating the empty list",my_list)
+# 3. with dynamic input:
+list1=[]
+list1=eval(input("enter list: "))
+print("print a list using dynamic input ",list1)
+print("print the type of my_list",type(list1))
+
+
+# 4. with list() function:
+l=list(range(0,10,2))
+print("print a range value in list: ",l)
+
+s="Harrish P T"
+l=list(s)
+print("convert a string to list: ",l)
+
+print("-----------------------------------------------------------")
+
 my_list.append(1)
 print("Appending element in a list",my_list)
 
@@ -53,5 +74,8 @@ print("Modifying Elements", my_list)
 
 print("10 in my_list", 10 in my_list) # True
 print( "11 in my_list",11 in my_list) # False
+
+
+
 
 print("-----------------------------------------------------------")

@@ -48,3 +48,4 @@ print("Reversed element ",reversed_list) # [5, 4, 3, 2, 1]
 # of the list elements mentioned in the sequence passed along.
 # This function is defined in “functools” module.
 
+
