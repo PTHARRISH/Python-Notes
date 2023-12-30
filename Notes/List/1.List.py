@@ -47,4 +47,11 @@ print("Accessing Elements",first_element)
 my_list[0] = 10  # Changes the first element to 10
 print("Modifying Elements", my_list)
 
+
+# Checking the elements
+# using in keyword the element are present or not in list will be checked and return True or False
+
+print("10 in my_list", 10 in my_list) # True
+print( "11 in my_list",11 in my_list) # False
+
 print("-----------------------------------------------------------")
