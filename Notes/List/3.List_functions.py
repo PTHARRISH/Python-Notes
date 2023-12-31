@@ -49,3 +49,5 @@ print("Reversed element ",reversed_list) # [5, 4, 3, 2, 1]
 # This function is defined in “functools” module.
 
 
+
+# ord(): Returns an integer representing the Unicode code point of the given Unicode character
