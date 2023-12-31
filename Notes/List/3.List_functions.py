@@ -50,4 +50,14 @@ print("Reversed element ",reversed_list) # [5, 4, 3, 2, 1]
 
 
 
-# ord(): Returns an integer representing the Unicode code point of the given Unicode character
+# ord(): Returns an integer representing the Unicode code point of the given Unicode character.
+
+
+# cmp(): This function returns 1 if the first list is “greater” than the second list
+
+
+
+# min(): return minimum element of a given list
+
+
+# max(): return maximum element of a given list
