@@ -12,6 +12,9 @@ print("Length of the list: ",len(n))
 # sum(): sum up the numbers in the list.
 # syntax: sum(iterable numbers)
 print("Sum of the list",sum(n))
+Sum = sum(n, 10)
+print(Sum)
+
 
 
 # split(): split the strings and store it to a list
@@ -59,13 +62,15 @@ print(functools.reduce(lambda a, b: a if a > b else b, lis))
 
 
 
+
+
 # ord(): Returns an integer representing the Unicode code point of the given Unicode character.
 
 
 # cmp(): This function returns 1 if the first list is “greater” than the second list
 
 
-print("---------------------------------Reduce Function------------------------------------------")
+print("------------------------------------min Function------------------------------------------")
 # min(): return minimum element of a given list
 # syntax: min(a, b, c, …, key=func)
 # Parameters
