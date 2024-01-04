@@ -16,6 +16,6 @@ def subarray(arr,s):
          return [-1]
     return [b+1,e+1]
 
-arr=[int(i) for i in input().split(",")]
+arr=[int(i) for i in input("Enter the array: ").split(",")]
 s=int(input("Target: "))
 print(subarray(arr,s))
