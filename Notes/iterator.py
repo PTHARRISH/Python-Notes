@@ -228,6 +228,22 @@ for i in ds:
     
 # for i in itr:
 # 	print(i) # 1 2
+    
+
+
+# A real-world example of an iterator in Python is the file object, 
+# which allows you to read a file line by line without loading the whole file into memory. 
+# You can use the open() function to create a file object and then use a for loop to iterate over it. 
+# For example:
+file = open("example.log", "r")
+
+# iterate over the file object
+for line in file:
+    # print each line
+    print(line)
+
+# close the file
+file.close()
 
 
 
