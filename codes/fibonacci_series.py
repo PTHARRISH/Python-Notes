@@ -8,8 +8,8 @@ for i in range(2,n+1):
     n2=n3
 print(n3)
 
-# Method 2: Using Recursive Function
 
+# Method 2: Using Recursive Function
 def fib(n):
     if n<=1:
         return n
