@@ -16,16 +16,19 @@
 # Explanation: Your function should return k = 2, with the first two elements of nums being 2.
 # It does not matter what you leave beyond the returned k (hence they are underscores).
 
+# using pop method
 def removeElement(nums, val):
     while val in nums:
         i=nums.index(val)
         nums.pop(i)
     return len(nums)
 
+# using remove method
 def removeElement(nums, val):
     while val in nums:
         nums.remove(val) # remove first occurence only
     return len(nums)
 
+# using list comprehension
 def removeElement(nums, val):
     nums[:] = [num for num in nums if num != val]
