@@ -11,3 +11,15 @@ class Solution:
         return "".join(merged)
     
     
+    def mergeAlternate(self, word1: str, word2: str) -> str:
+        answer=""
+        min_length=min(len(word1),len(word2))
+        for i in range(min_length):
+            answer+=word1[i]+word2[i]
+        
+        answer+=word1[min_length:]
+        answer+=word2[min_length:]
+        return answer
+
+
+    
