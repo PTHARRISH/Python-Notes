@@ -22,3 +22,7 @@ def removeElement(nums, val):
         nums.pop(i)
     return len(nums)
 
+def removeElement(nums, val):
+    while val in nums:
+        nums.remove(val) # remove first occurence only
+    return len(nums)
