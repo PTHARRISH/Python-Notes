@@ -18,4 +18,9 @@ def removeDuplicates(nums):
         nums[:]=sorted(list(a))
         return len(nums)
 
+
+def removeDuplicates(nums):
+        nums[:]=list(set(nums))
+        nums.sort()
+        return len(nums)
 print(removeDuplicates([-1,-1,0,3,3]))
