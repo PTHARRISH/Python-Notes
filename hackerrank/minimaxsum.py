@@ -11,4 +11,5 @@ def miniMaxSum(arr):
     print(news1,news2)
         
 a=list(map(int,input().split())) # 1 2 3 4 5 6 7
-miniMaxSum(a) # 21 27
+miniMaxSum(a) 
+# output: 21 27
