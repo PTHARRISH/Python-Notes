@@ -27,6 +27,10 @@ def move_zero(a):
         count+=1
     return a
 
+a=[int(i) for i in input("enter the numbers with zeros: ").split(",")]
+# arr=list(map(int,input().split(' ')))
+print(move_zero(a))
+
 
 # 2nd method using swapping
 def move_zero(nums):
@@ -38,7 +42,7 @@ def move_zero(nums):
     print(nums)
     return nums
 
-a=[int(i) for i in input().split(",")]
+a=[int(i) for i in input("enter the numbers with zeros: ").split(",")]
 # arr=list(map(int,input().split(' ')))
 print(move_zero(a))
 
