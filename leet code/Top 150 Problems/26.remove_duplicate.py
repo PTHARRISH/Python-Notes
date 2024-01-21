@@ -24,3 +24,14 @@ def removeDuplicates(nums):
         nums.sort()
         return len(nums)
 print(removeDuplicates([-1,-1,0,3,3]))
+
+
+def removeDuplicates(nums):
+        l=1
+        for i in range(1,len(nums)):
+            if nums[i]!=nums[i-1]:
+                nums[l]=nums[i]
+                l+=1
+        return l
+
+print(removeDuplicates([-1,-1,0,3,3]))

@@ -24,3 +24,18 @@ def canPlaceFlowers(flowerbed, n):
             n-=1
             if n==0: return True
     return False 
+
+def canPlaceFlowers(flowerbed, n):
+        arr2 = [0] + flowerbed + [0]
+        count = 0 
+
+        for i in range(1,len(flowerbed)+1):
+            if arr2[i]==0 and arr2[i-1]==0 and arr2[i+1]==0 :
+                count+=1
+                arr2[i] = 1
+        if count>=n:
+            return True
+        else:
+            return False
+        
+print(canPlaceFlowers([1,0,0,0,1],1))

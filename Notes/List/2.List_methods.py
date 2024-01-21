@@ -6,20 +6,31 @@ print("-------------------------------List methods------------------------------
 print("------------------------------------------------------------------------------------------")
 
 
+print("Using append method : ")
 # append(): Adds an element to the end of the list.
 # syntax:
 # list_name.append(values) # append any type of data
+
 lst=[1,2,3,4]
+List1=[]
 my_list.append(6)
 print("Appending element in a list: ",my_list)  
 # [10, 2, 3, 4, 5, 6] # 6 is appended
+
 lst.append((5, 6))
 print("\nList after Addition of a Tuple: ",lst)
 # [1, 2, 3, 4, (5, 6)]
+
+# Addition of List to a List
+List2 = ['P T', 'Harrish']
+List1.append(List2)
+print("List after Addition of a List: ",end="")
+print(List1)
+# List after Addition of a List: [['P T', 'Harrish']]
 print("------------------------------------------------------------------------------------------")
 
 
-
+print("Using index method : ")
 # index(): Return the index of the first matched item.
 # syntax:
 # list_name.index(number)
@@ -32,7 +43,7 @@ print("Indexing element in a list: ",my_list.index(2))
 print("------------------------------------------------------------------------------------------")
 
 
-
+print("Using insert method : ")
 # insert(): Adds an element at a specific index.
 # If the specified index is greater than max index then element will be inserted at last position.
 # If the specified index is smaller than min index the element will be inserted at the first position.
@@ -53,7 +64,7 @@ print("Inserting elements in a list: ",my_list)
 print("------------------------------------------------------------------------------------------")
 
 
-
+print("Using extend method : ")
 # extend(): Add all element of a list to another list.
 # syntax:
 # list_name1.extend(list_name2) or list_name1.extend([values])
@@ -77,7 +88,7 @@ print("Nested list elements in a list: ",my_list[16][0])
 print("------------------------------------------------------------------------------------------")
 
 
-
+print("Using pop method : ")
 # pop(): Removes the element at a specific index.# position is optional, negative position also allowed.
 # It returned removed element in the list.
 # If the list is empty then pop() function raises IndexError
@@ -89,11 +100,11 @@ print("Popping elements in a list: ",my_list)
 
 print(my_list.pop(2)) # 2 # 2 is position 
 print("Popping elements using position: ",my_list) 
-# [0, 1, 3, 99, 4, 5, 6, 100, 0, 9, 8, 7, 1, 2, 3, [2, 3], 'H'] # 2 popped
+# [0, 1, 3, 99, 4, 5, 6, 100, 0, 9, 8, 7, 1, 2, 3, [2, 3], 'H'] # 2 popped positive index
 
 print(my_list.pop(-3)) # 3
 print("Popping elements using position: ",my_list)
-# [0, 1, 3, 99, 4, 5, 6, 100, 0, 9, 8, 7, 1, 2, [2, 3], 'H'] # 3 popped
+# [0, 1, 3, 99, 4, 5, 6, 100, 0, 9, 8, 7, 1, 2, [2, 3], 'H'] # 3 popped negative index
 
 # my_list.pop(99)
 # print("Popping elements using position: ",my_list) 
@@ -106,7 +117,7 @@ print("Popping elements using position: ",my_list)
 print("------------------------------------------------------------------------------------------")
 
 
-
+print("Using remove method : ")
 # remove(): Removes the first occurrence of a value.
 # If the specified item not present in the list then we will get ValueError.
 # It can't return any value.
@@ -122,7 +133,7 @@ print("Removing elements in a list: ",my_list)
 print("------------------------------------------------------------------------------------------")
 
 
-
+print("Using reverse method : ")
 # reverse(): Reverses the list.
 # syntax: list_name.reverse()
 
@@ -132,7 +143,7 @@ print("Reversing element in a list: ",my_list)
 print("------------------------------------------------------------------------------------------")
 
 
-
+print("Using sort method : ")
 # sort(): Sorts the list.
 # we can sort according to reverse of default natural sorting order by using reverse=True argument.
 # Here you can only sort the list of int only or str data only.
@@ -148,7 +159,7 @@ print("Sorting element in a list reverse argument: ",my_list)
 print("------------------------------------------------------------------------------------------")
 
 
-
+print("Using count method : ")
 # count(): Return the count of the number of items passed as an argument.
 my_list=[1,0,-1,8,2,3,1,0,-9] # valid
 print("Counting element in a list: ",my_list.count(1))
@@ -157,7 +168,7 @@ print("Counting element in a list: ",my_list.count('a'))
 print("------------------------------------------------------------------------------------------")
 
 
-
+print("Using copy function: ")
 # copy(): Return a copy of the list. 
 # syntax: list_name2=list_name.copy()
 # Shallow Copy and Deep Copy
@@ -172,6 +183,7 @@ print("-------------------------------------------------------------------------
 
 
 
+print("Using clear function : ")
 # clear(): Remove all items from the list.
 # syntax: list_name.clear()
 print("Before clearing element in the list: ",my_list) # ['a', 'd', 'c', 'a', 'a']
@@ -181,10 +193,30 @@ print("-------------------------------------------------------------------------
 
 
 
+print("Using Operator : ")
+# Using Add operator to append a string
+my_list+="Hello"
+print("Add a string using concatination: ",my_list)
+
+my_list+="world"+"Harrish"
+print("Add more than one string using concatination: ",my_list)
 
 
+# concatinate the list and string and assign to a list
+# my_list=my_list+"welcome"
+# print(my_list)
+# TypeError: can only concatenate list (not "str") to list
 
 
+print("------------------------------------------------------------------------------------------")
+print("Using Iterator : ")
+# Adding elements to the List
+# using Iterator
+for i in range(1, 4):
+    List1.append(i)
+print("List after Addition of elements from 1-3: ",List1)
+# List after Addition of elements from 1-3:  [['P T', 'Harrish'], 1, 2, 3]
+ 
 
-
+print("------------------------------------------------------------------------------------------")
 
