@@ -16,4 +16,4 @@
 
 >[151. Reverse Words in a String](https://github.com/PTHARRISH/Python-Notes/blob/master/leet%20code/75%20leetcode/151.Reverse_word_in_a_string.py)
 
->[151. Reverse Words in a String](https://github.com/PTHARRISH/Python-Notes/blob/master/leet%20code/75%20leetcode/151.Reverse_word_in_a_string.py)
+>[392. Is Subsequence](https://github.com/PTHARRISH/Python-Notes/blob/master/leet%20code%2F75%20leetcode%2F392.Is_Subsequence.py)
