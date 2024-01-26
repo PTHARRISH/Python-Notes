@@ -16,6 +16,6 @@ for i in string:
         word+=i
     else:
         reversed_word=' '+word+reversed_word
-        word=''
+        word=' '
 reversed_word=word+reversed_word
 print(reversed_word)
