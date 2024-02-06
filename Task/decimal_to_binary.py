@@ -1,7 +1,9 @@
+# decimal to binary
 n=int(input())
 list1=[]
 val=0
-for i in range(8):
+i=1
+while i>=8:
     a=n/2
     print(a)
     b=list(str(a))[-1]
@@ -13,6 +15,7 @@ for i in range(8):
         c=0
         list1.append(c)
     n=int(a)
+    i+=1
 
 output=""
 for i in list1:
