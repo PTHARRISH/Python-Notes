@@ -12,10 +12,10 @@ for i in range(8):
     else:
         c=0
         list1.append(c)
-    n=a
+    n=int(a)
 
-print(list1)
-
-
-
-
+output=""
+for i in list1:
+    output+=str(i)
+print(output[::-1])
+print(bin(99))
