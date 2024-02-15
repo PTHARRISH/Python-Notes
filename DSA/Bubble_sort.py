@@ -9,8 +9,8 @@ def bubble(arr):
                 print(arr)
     return arr
 
-arr=list(map(int,input("enter the numbers: ").split(",")))
-print(bubble(arr))
+# arr=list(map(int,input("enter the numbers: ").split(",")))
+# print(bubble(arr))
 # i j
 # 0 0 -> j[0]>j[1]=[1,3,0,2,5,6,4]
 # 0 1 -> j[1]>j[2]=[1,3>0,2,5,6,4] True
@@ -39,3 +39,19 @@ print(bubble(arr))
 # 4 1
 # 5 0
 # [0, 1, 2, 3, 4, 5, 6]
+
+
+
+def bubble_sort(arr):
+    n=len(arr)
+    for i in range(n):
+        swapped=True
+        for j in range(n-i-1):
+            print(i,j)
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1]=arr[j+1],arr[j]
+        if not swapped:
+            break
+    return arr
+arr=list(map(int,input("enter the numbers: ").split(",")))
+print(bubble_sort(arr))
