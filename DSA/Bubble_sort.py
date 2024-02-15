@@ -41,6 +41,14 @@ def bubble(arr):
 # [0, 1, 2, 3, 4, 5, 6]
 
 
+# Optimized Bubble Sort Algorithm
+# In the above algorithm, all the comparisons are made even if the array is already sorted.
+# This increases the execution time.
+# To solve this, we can introduce an extra variable swapped. 
+# The value of swapped is set true if there occurs swapping of elements. Otherwise, it is set false.
+# After an iteration, if there is no swapping, the value of swapped will be false.
+# 
+
 
 def bubble_sort(arr):
     n=len(arr)
