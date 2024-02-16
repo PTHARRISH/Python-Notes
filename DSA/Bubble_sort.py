@@ -1,4 +1,15 @@
 # Bubble Sort
+
+# Bubble sort is a sorting algorithm that compares two adjacent elements and swaps them 
+# until they are in the intended order.
+
+# Starting from the first index, compare the first and the second elements
+# If the first element is greater than the second element, they are swapped.
+# Now, compare the second and the third elements. Swap them if they are not in order.
+# The above process goes on until the last element.
+
+
+
 def bubble(arr):
     n=len(arr)
     for i in range(n):
@@ -63,3 +74,21 @@ def bubble_sort(arr):
     return arr
 arr=list(map(int,input("enter the numbers: ").split(",")))
 print(bubble_sort(arr))
+
+
+# 0 0
+# 0 1
+# 0 2
+# 0 3
+# 0 4
+# 1 0
+# 1 1
+# 1 2
+# 1 3
+# 2 0
+# 2 1
+# 2 2
+# 3 0
+# 3 1
+# 4 0
+# [0, 1, 2, 3, 5, 8]
