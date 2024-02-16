@@ -141,7 +141,7 @@ print_pascal_triangle(rows)
 
 
 
-print("Reverse number ")
+print("Print number in reverse order ")
 # 1
 # 3 2
 # 6 5 4
@@ -157,3 +157,18 @@ for row in range(2, 6):
     start = stop
     stop += row
     current_num = stop
+
+
+
+print("Reverse number in pattern ")
+# 1
+# 2 1
+# 3 2 1
+# 4 3 2 1
+# 5 4 3 2 1
+
+rows = 6
+for i in range(1, rows):
+    for j in range(i, 0, -1):
+        print(j, end=' ')
+    print("")
