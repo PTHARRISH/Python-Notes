@@ -69,6 +69,7 @@ for i in range(n+1):
 
 print("--------------------------------------------------------")
 print("Pascal triangle")
+
 # 1 
 # 1 1 
 # 1 2 1 
@@ -96,6 +97,7 @@ print_pascal_triangle(rows)
 
 print("--------------------------------------------------------")
 print("Print number in reverse order ")
+
 # 1
 # 3 2
 # 6 5 4
