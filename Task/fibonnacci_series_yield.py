@@ -55,3 +55,28 @@ for i in range(n):
             a = b
             b = c
     print()
+
+n = int(input())
+# n=k+1
+a=0
+b=1
+for i in range(0, n+1):
+    for j in range(0, n - i):
+        print(" ", end="")
+    for j in range(0, i + 1):
+        print(a, end=" ")
+        c = a + b
+        a = b
+        b = c
+    print()
+    # n = n - 1
+# n = k+1
+for i in range(0, n):
+    for j in range(0, i+1):
+        print(" ", end="")
+    for j in range(0, n - i):
+        print(a, end=" ")
+        c = a + b
+        a = b
+        b = c
+    print()
