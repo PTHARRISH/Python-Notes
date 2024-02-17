@@ -170,5 +170,85 @@ for i in range(0, n+1):
     print()
 
 
+print("--------------------------------------------------------")
+
+# diamond pattern
+
+#       0
+#      1 1
+#     2 2 2
+#    3 3 3 3
+#   4 4 4 4 4
+#  5 5 5 5 5 5
+# 6 6 6 6 6 6 6
+#  0 0 0 0 0 0
+#   1 1 1 1 1
+#    2 2 2 2
+#     3 3 3
+#      4 4
+#       5
+
+n = int(input())
+# n=k+1
+for i in range(0, n+1):
+    for j in range(0, n - i):
+        print(" ", end="")
+    for j in range(0, i + 1):
+        print(i, end=" ")
+    print()
+    # n = n - 1
+# n = k+1
+for i in range(0, n):
+    for j in range(0, i+1):
+        print(" ", end="")
+    for j in range(0, n - i):
+        print(i, end=" ")
+    print()
 
 print("--------------------------------------------------------")
+
+# 2. diamond pattern
+  
+#       0
+#      1 1
+#     2 2 2
+#    3 3 3 3
+#   4 4 4 4 4
+#  5 5 5 5 5 5
+# 6 6 6 6 6 6 6
+#  5 5 5 5 5 5
+#   4 4 4 4 4
+#    3 3 3 3
+#     2 2 2
+#      1 1
+#       0
+
+
+n = int(input())
+# n=k+1
+for i in range(0, n + 1):
+    for j in range(0, n - i):
+        print(" ", end="")
+    for j in range(0, i + 1):
+        print(i, end=" ")
+    print()
+    # n = n - 1
+# n = k+1
+for i in range(n - 1, -1, -1):
+    for j in range(0, n - i):
+        print(" ", end="")
+    for j in range(0, i + 1):
+        print(i, end=" ")
+    print()
+
+print("--------------------------------------------------------")
+
+# triangle pattern
+# n = int(input())
+# for i in range(0, n):
+#     for j in range(0, n + 1):
+#         print(" ", end="")
+#     for j in range(0, i + 1):
+#         print(i, end=" ")
+#     print()
+#     n = n - 1
