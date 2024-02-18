@@ -10,20 +10,6 @@ print("--------------------------------------------------------")
 
 for i in range(n):
     print("*"*n)
-    
-print("--------------------------------------------------------")
-# 1
-# 1 2
-# 1 2 6
-# 1 2 6 24
-# 1 2 6 24 120
-
-for i in range(1,n+1):
-    sum=1
-    for j in range(1,i+1):
-        sum*=j
-        print(sum,end=" ")
-    print()
 
 print("--------------------------------------------------------")
 
@@ -65,7 +51,34 @@ for i in range(n+1):
         print(i,end="")
     print()
 
+print("--------------------------------------------------------")
 
+# 5 4 3 2 1
+# 4 3 2 1
+# 3 2 1
+# 2 1
+# 1
+for i in range(n):
+    for j in range(n-i,0,-1):
+        print(j,end=" ")
+    print() 
+
+print("--------------------------------------------------------")
+
+    
+print("--------------------------------------------------------")
+# 1
+# 1 2
+# 1 2 6
+# 1 2 6 24
+# 1 2 6 24 120
+
+for i in range(1,n+1):
+    sum=1
+    for j in range(1,i+1):
+        sum*=j
+        print(sum,end=" ")
+    print()
 
 print("--------------------------------------------------------")
 print("Pascal triangle")
@@ -132,8 +145,9 @@ for i in range(1, rows):
 
 
 print("--------------------------------------------------------")
-# reverse for loop from 5 to 0
 
+# reverse for loop from 5 to 0
+print("reverse for loop from n to 0 ")
 # 1 1 1 1 1 
 # 2 2 2 2
 # 3 3 3
@@ -150,16 +164,15 @@ for i in range(rows, 0, -1):
     print('\r')
 
 print("--------------------------------------------------------")
-
-
-# 1    6
-#  2  5
-#   34
-#   34
-#  2  5
-# 1    6
-
 # x patter number
+
+# 1    6
+#  2  5
+#   34
+#   34
+#  2  5
+# 1    6
+
 n = int(input())
 for i in range(0, n+1):
     for j in range(1, n+1):
@@ -187,6 +200,7 @@ print("--------------------------------------------------------")
 #     3 3 3
 #      4 4
 #       5
+
 
 n = int(input())
 # n=k+1
@@ -243,12 +257,34 @@ for i in range(n - 1, -1, -1):
 
 print("--------------------------------------------------------")
 
-# triangle pattern
-# n = int(input())
-# for i in range(0, n):
-#     for j in range(0, n + 1):
-#         print(" ", end="")
-#     for j in range(0, i + 1):
-#         print(i, end=" ")
-#     print()
-#     n = n - 1
+#         1
+#       1 2
+#     1 2 3
+#   1 2 3 4
+# 1 2 3 4 5
+
+for i in range(1,n+1):
+    for j in range(n-i):
+        print(" ",end=" ")
+    
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
+
+print("--------------------------------------------------------")
+
+
+#         5 4 3 2 1
+#       5 4 3 2 1
+#     5 4 3 2 1
+#   5 4 3 2 1
+# 5 4 3 2 1
+
+for i in range(1,n+1):
+    for j in range(n-i):
+        print(" ",end=" ")
+    
+    for j in range(n,0,-1):
+        print(j,end=" ")
+    
+    print()
