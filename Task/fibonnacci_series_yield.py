@@ -69,8 +69,8 @@ for i in range(0, n+1):
         a = b
         b = c
     print()
-    # n = n - 1
-# n = k+1
+a=0
+b=1
 for i in range(0, n):
     for j in range(0, i+1):
         print(" ", end="")
