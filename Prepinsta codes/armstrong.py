@@ -1,5 +1,4 @@
 # Armstrong Number
-
 number = int(input("Enter the number: "))
 num = number
 digit, sum = 0, 0
