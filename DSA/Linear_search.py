@@ -8,6 +8,17 @@
 # Implementation: Linear search can be easily implemented using a loop, 
 # with each iteration comparing the target value to the current element of the array.
 # 
+
+# Pseudocode
+# procedure linear_search (list, value)
+#    for each item in the list
+#       if match item == value
+#          return the item's location
+#       end if
+#    end for
+# end procedure
+
+
 # def search(arr, N, x):  
 #     for i in range(0, N):
 #         if arr[i] == x:
@@ -49,3 +60,4 @@
 #     print(f"{key} is not found in the array: {array}")
 # else:
 #     print(f"{key} is found at index {index} in the array: {array}")
+
