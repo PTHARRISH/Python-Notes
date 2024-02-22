@@ -40,3 +40,5 @@ arr = [12, 11, 13, 5, 6]
 insertionSort(arr)
 print(arr)
 
+# If the given numbers are sorted, this algorithm runs in O(n) time. 
+# If the given numbers are in reverse order, the algorithm runs in O(n2) time.

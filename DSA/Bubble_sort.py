@@ -10,9 +10,9 @@
 
 
 def bubble(arr):
-    n=len(arr)
-    for i in range(n):
-        for j in range(n-i-1):
+    n=len(arr)# 7
+    for i in range(n): # 0,7
+        for j in range(n-i-1): # 7-0-1 (0,6)
             print(i,j)
             if arr[j]>arr[j+1]:
                 arr[j],arr[j+1]=arr[j+1],arr[j]
