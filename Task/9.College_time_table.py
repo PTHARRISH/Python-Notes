@@ -6,5 +6,9 @@ def time_table(current_time):
         start_hrs,start_min=map(int,start_time.split("."))
         if start_hrs<curent_hrs or (start_hrs==curent_hrs)and start_min<=current_min:
             end_hrs=start_hrs+1
-            if start_min==0 else
+            if start_min==0 :
+                pass
+            else:
+                pass
+
 time_table("10:00")
