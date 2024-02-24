@@ -288,3 +288,17 @@ for i in range(1,n+1):
         print(j,end=" ")
     
     print()
+
+
+
+print("--------------------------------------------------------")
+
+# x pattern name
+# n = input()
+# for i in range(0, len(n)):
+#     for j in range(0, len(n)):
+#         if i == j or i + j == len(n)-1:
+#             print(n[j],end="")
+#         else:
+#             print(" ",end='')
+#     print()
