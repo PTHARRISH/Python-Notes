@@ -1,14 +1,4 @@
 
-# x pattern name
-# n = input()
-# for i in range(0, len(n)):
-#     for j in range(0, len(n)):
-#         if i == j or i + j == len(n)-1:
-#             print(n[j],end="")
-#         else:
-#             print(" ",end='')
-#     print()
-
 # Largest number
 # n = [63, 84, 42, 24, 100]
 # for i in n:
