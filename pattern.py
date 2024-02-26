@@ -1,22 +1,3 @@
-
-# Largest number
-# n = [63, 84, 42, 24, 100]
-# for i in n:
-#     a = 0
-#     if a < i:
-#         a = i
-# print(a)
-
-# triangle pattern
-# n = int(input())
-# for i in range(0, n):
-#     for j in range(0, n + 1):
-#         print(" ", end="")
-#     for j in range(0, i + 1):
-#         print(i, end=" ")
-#     print()
-#     n = n - 1
-
 # reverse triangle
 # n = 6
 # for i in range(0, n):
@@ -54,6 +35,3 @@
 #     if i < min1:
 #         min1 = i
 # print(min1)
-
-
-

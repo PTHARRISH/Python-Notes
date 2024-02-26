@@ -312,3 +312,26 @@ for i in range(0, len(n)):
 
 print("--------------------------------------------------------")
 
+
+# triangle pattern
+
+#      0
+#     1 1
+#    2 2 2
+#   3 3 3 3
+#  4 4 4 4 4
+# 5 5 5 5 5 5
+#  0 0 0 0 0
+#   1 1 1 1
+#    2 2 2
+#     3 3
+#      4
+
+n = int(input())
+for i in range(0, n):
+    for j in range(0, n + 1):
+        print(" ", end="")
+    for j in range(0, i + 1):
+        print(i, end=" ")
+    print()
+    n = n - 1
