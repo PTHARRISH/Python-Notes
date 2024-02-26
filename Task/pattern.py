@@ -335,3 +335,22 @@ for i in range(0, n):
         print(i, end=" ")
     print()
     n = n - 1
+
+
+print("--------------------------------------------------------")
+
+# 0 0 0 0 0 0
+#  1 1 1 1 1
+#   2 2 2 2
+#    3 3 3
+#     4 4
+#      5
+
+# reverse triangle
+n = 6
+for i in range(0, n):
+    for j in range(0, i):
+        print(" ", end="")
+    for j in range(0, n - i):
+        print(i, end=" ")
+    print()
