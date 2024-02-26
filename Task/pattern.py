@@ -294,11 +294,21 @@ for i in range(1,n+1):
 print("--------------------------------------------------------")
 
 # x pattern name
-# n = input()
-# for i in range(0, len(n)):
-#     for j in range(0, len(n)):
-#         if i == j or i + j == len(n)-1:
-#             print(n[j],end="")
-#         else:
-#             print(" ",end='')
-#     print()
+
+# 1   5
+#  2 4
+#   3
+#  2 4
+# 1   5
+
+n = input()
+for i in range(0, len(n)):
+    for j in range(0, len(n)):
+        if i == j or i + j == len(n)-1:
+            print(n[j],end="")
+        else:
+            print(" ",end='')
+    print()
+
+print("--------------------------------------------------------")
+
