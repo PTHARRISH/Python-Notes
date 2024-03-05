@@ -19,14 +19,6 @@
 >[392. Is Subsequence](https://github.com/PTHARRISH/Python-Notes/blob/master/leet%20code%2F75%20leetcode%2F392.Is_Subsequence.py)
 
 
-<h2>Notes</h2>
-<h3>Python</h3>
-<h4>Basics</h4>
 
->[Print Statement](https://github.com/PTHARRISH/Python-Notes/blob/master/Notes/1.print_statement.py)
-
->[Variable](https://github.com/PTHARRISH/Python-Notes/blob/master/Notes/2.variables.py)
-
->[Keywords](https://github.com/PTHARRISH/Python-Notes/blob/master/Notes/3.keywords.py)
 
 
