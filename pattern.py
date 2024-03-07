@@ -1,12 +1,3 @@
-# greatest number
-# list = (30, 50, 21, 16, 100, 80,6)
-# a=0
-# for i in list:
-#     if a<i:
-#        a = i
-#        print(a)
-# print(a)
-
 #  least numbers
 # list = (30, 50, 21, 16, 100, 80)
 # for j in list:
