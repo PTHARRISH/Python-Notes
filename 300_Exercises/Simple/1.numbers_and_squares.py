@@ -1,4 +1,4 @@
-# Python to find the range of numbers that are squares within a specified limit
+# 1.Python to find the range of numbers that are squares within a specified limit
 # method 1
 print('Numbers\t\tSquares')
 print('1 \t\t '+str(1*1))
@@ -23,7 +23,7 @@ except ValueError:
     print("Invalid input! Please enter two integers separated by a space.")
 
 
-# Assignment
+# Assignment 1:
 # In Python to find the range of numbers that are both squares and cubes within a specified limit 
 def number_square_cubes(start_num,end_num):
     if start_num>end_num:
