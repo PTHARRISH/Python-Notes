@@ -25,16 +25,16 @@
 # Output: "example good a"
 # Explanation: You need to reduce multiple spaces between two words to a single space in the reversed string.
 
-def reverseWords(s):
+def reverse_words(s):
     l=s.split()[::-1]
     return " ".join(l)
 s="a good   example"
-print(reverseWords(s))
+print(reverse_words(s))
 
 # example good a
 
 # 2nd method using while loop
-def reverseWords(s):
+def reverse_words(s):
     result=""
     s=s.strip()
     i=0
@@ -46,6 +46,6 @@ def reverseWords(s):
     return result[:-1]
 
 s="  hello world  "
-print(reverseWords(s))
+print(reverse_words(s))
 
 # world hello
