@@ -105,7 +105,7 @@ print("\r")
 # check the object address is same or not If the object address is same it wil return True or return false 
 # string is immutable( cannot be changed once allocated) 
 # hence occupy same memory location 
-print(' ' is ' ') 
+# print(' ' is ' ') 
 a=10
 b=10
 print(a is b)# check the object address is same or not If the object address is same it wil return True or return false
