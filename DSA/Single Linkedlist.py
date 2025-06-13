@@ -25,6 +25,52 @@ class Sll:
         nb.next = self.head
         self.head = nb
 
+    def insert_at_end(self, data):
+        ne = Node(data)
+        a = self.head
+        print()
+        while a.next is not None:
+            print(a.data, end=" ")
+            a = a.next
+        a.next = ne
+
+    def insert_at_middle(self, pos, data):
+        nm = Node(data)
+        a = self.head
+        for i in range(1, pos - 1):
+            a = a.next
+        nm.next = a.next
+        a.next = nm
+
+    def delete_at_begining(self):
+        a = self.head
+        self.head = a.next
+        a.next = None
+
+    # def delete_at_the_end(self):
+    #     a = self.head
+    #     while a.next.next:
+    #         a = a.next
+    #     a.next = None
+
+    def delete_at_the_end(self):
+        a = self.head
+        prev = None
+        while a.next is not None:
+            prev = a
+            a = a.next
+        prev.next = None
+
+    def delete_at_position(self, pos):
+        if pos == 1:
+            self.head = self.head.next
+        a = self.head
+        prev = None
+        for i in range(1, pos):
+            prev = a
+            a = a.next
+        prev.next = a.next
+
 
 n1 = Node(5)  # create a data=5 and pass value in Node class
 sll = Sll()  # create a object of sll
@@ -37,6 +83,16 @@ n4 = Node(20)
 n3.next = n4
 sll.traversal()
 sll.insert_beginning(1)
+sll.traversal()
+sll.insert_at_end(25)
+sll.traversal()
+sll.insert_at_middle(3, 12)
+sll.traversal()
+sll.delete_at_begining()
+sll.traversal()
+sll.delete_at_the_end()
+sll.traversal()
+sll.delete_at_position(3)
 sll.traversal()
 
 
