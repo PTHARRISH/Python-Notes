@@ -1,4 +1,4 @@
-# Quick Sort 
+# Quick Sort
 # Approach 1:
 # def partition(data,l,r):
 #     pivot=data[r]
@@ -18,7 +18,7 @@
 
 # data=[1,7,4,1,10,9,-2]
 # print("Unsorted Array")
-# print(data) 
+# print(data)
 # r=len(data)-1
 # print(r)
 # quickSort(data,0,r)
@@ -41,3 +41,17 @@
 # sorted_arr = quicksort(arr)
 # print("Sorted Array in Ascending Order:")
 # print(sorted_arr)
+
+
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quick_sort(left) + middle + quick_sort(right)
+
+
+arr = [700, 200, 400, 100, 90]
+print(quick_sort(arr))
