@@ -12,5 +12,5 @@ def maxSum(nums):
     return total_data
 
 
-arr = list(map(int, input("Enter the array:").split(',')))
+arr = list(map(int, input("Enter the array:").split(",")))
 print(maxSum(arr))
