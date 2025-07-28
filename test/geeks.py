@@ -1,4 +1,8 @@
-from geek_for_geeks.challenge.Secondlargest import getSecondLargest
+import os
+import sys
+
+sys.path.append(os.path.abspath(".."))
+from geek_for_geeks.challenge.secondlargest import getSecondLargest
 
 
 class Test_getSecondLargest:
