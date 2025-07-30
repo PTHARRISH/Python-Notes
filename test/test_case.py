@@ -3,6 +3,7 @@ import sys
 
 sys.path.append(os.path.abspath(".."))
 from geek_for_geeks.challenge.move_zero import pushZerosToEnd
+from geek_for_geeks.challenge.reverse_an_array import reverseArray
 from geek_for_geeks.challenge.secondlargest import getSecondLargest
 
 
@@ -65,3 +66,33 @@ class TestPushZerosToEnd:
         expected = [1, 2, 3, 0, 0, 0, 0]
         pushZerosToEnd(arr)
         assert arr == expected
+
+
+class TestReverseArray:
+    def test_even_length(self):
+        arr = [1, 2, 3, 4]
+        expected = [4, 3, 2, 1]
+        assert reverseArray(arr) == expected
+
+    def test_odd_length(self):
+        arr = [1, 2, 3, 4, 5]
+        expected = [5, 4, 3, 2, 1]
+        assert reverseArray(arr) == expected
+
+    def test_single_element(self):
+        arr = [7]
+        expected = [7]
+        assert reverseArray(arr) == expected
+
+    def test_empty_list(self):
+        arr = []
+        expected = []
+        assert reverseArray(arr) == expected
+
+    def test_palindrome_list(self):
+        arr = [1, 2, 3, 2, 1]
+        expected = [1, 2, 3, 2, 1]
+        assert reverseArray(arr) == expected
+
+
+U
