@@ -93,6 +93,3 @@ class TestReverseArray:
         arr = [1, 2, 3, 2, 1]
         expected = [1, 2, 3, 2, 1]
         assert reverseArray(arr) == expected
-
-
-U
