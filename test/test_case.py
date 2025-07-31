@@ -4,6 +4,7 @@ import sys
 sys.path.append(os.path.abspath(".."))
 from geek_for_geeks.challenge.move_zero import pushZerosToEnd
 from geek_for_geeks.challenge.reverse_an_array import reverseArray
+from geek_for_geeks.challenge.rotate_an_array import rotateArr
 from geek_for_geeks.challenge.secondlargest import getSecondLargest
 
 
@@ -93,3 +94,25 @@ class TestReverseArray:
         arr = [1, 2, 3, 2, 1]
         expected = [1, 2, 3, 2, 1]
         assert reverseArray(arr) == expected
+
+
+class TestRotateArr:
+    def test_rotate_by_two(self):
+        arr = [1, 2, 3, 4, 5]
+        rotated = rotateArr(arr, 2)
+        assert rotated == [3, 4, 5, 1, 2]
+
+    def test_rotate_by_zero(self):
+        arr = [1, 2, 3]
+        rotated = rotateArr(arr, 0)
+        assert rotated == [1, 2, 3]
+
+    def test_rotate_by_length(self):
+        arr = [1, 2, 3]
+        rotated = rotateArr(arr, 3)
+        assert rotated == [1, 2, 3]
+
+    def test_rotate_by_more_than_length(self):
+        arr = [1, 2, 3, 4]
+        rotated = rotateArr(arr, 6)  # 6 % 4 = 2
+        assert rotated == [3, 4, 1, 2]
