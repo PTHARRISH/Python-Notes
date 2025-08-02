@@ -1,9 +1,11 @@
 # Itertools.permutation()
 # Itertools.permutation() function falls under the Combinatoric Generators.
-# The recursive generators that are used to simplify combinatorial constructs such as permutations, combinations,
+# The recursive generators that are used to simplify combinatorial constructs 
+# such as permutations, combinations,
 # and Cartesian products are called combinatoric iterators
 
-# The word “Permutation” it refers to all the possible combinations in which a set or string can be ordered or arranged.
+# The word “Permutation” it refers to all the possible combinations 
+# in which a set or string can be ordered or arranged.
 # Similarly here itertool.permutations() method provides us with all the possible arrangements
 # that can be there for an iterator and all elements are assumed to be unique on the basis of their position
 # and not by their value or category.
@@ -27,6 +29,32 @@ p = permutations(
 for i in list(p):
     print(i)  # print each value inside the permutation object
 
+# Example:
+
+# ('H', 'A', 'S', 'H')
+# ('H', 'A', 'H', 'S')
+# ('H', 'S', 'A', 'H')
+# ('H', 'S', 'H', 'A')
+# ('H', 'H', 'A', 'S')
+# ('H', 'H', 'S', 'A')
+# ('A', 'H', 'S', 'H')
+# ('A', 'H', 'H', 'S')
+# ('A', 'S', 'H', 'H')
+# ('A', 'S', 'H', 'H')
+# ('A', 'H', 'H', 'S')
+# ('A', 'H', 'S', 'H')
+# ('S', 'H', 'A', 'H')
+# ('S', 'H', 'H', 'A')
+# ('S', 'A', 'H', 'H')
+# ('S', 'A', 'H', 'H')
+# ('S', 'H', 'H', 'A')
+# ('S', 'H', 'A', 'H')
+# ('H', 'H', 'A', 'S')
+# ('H', 'H', 'S', 'A')
+# ('H', 'A', 'H', 'S')
+# ('H', 'A', 'S', 'H')
+# ('H', 'S', 'H', 'A')
+# ('H', 'S', 'A', 'H')
 
 # Example:
 print("All the permutations of the given list is:")
@@ -46,7 +74,8 @@ print()
 
 
 print("All the permutations of the given container is:")
-print(list(permutations(range(3), 2)))  # 2 is r -> refers to the length or dimension
+print(list(permutations(range(3), 2)))  
+# 2 is r -> refers to the length or dimension
 
 # If r and length is mentioned here the output is
 # All the permutations of the given container is (range(3), 2):
