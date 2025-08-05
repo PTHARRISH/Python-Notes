@@ -1,4 +1,4 @@
-# Majority Element - More Than n/3
+# 6.Majority Element - More Than n/3
 def findMajority(arr):
     data = {}
     n = len(arr)

@@ -21,42 +21,41 @@ def rotateArr(arr, d):
 # S.C = O(1)
 
 
-def rotateArr(arr, d):
-    n = len(arr)
-    d = d % n
-    return arr[d:] + arr[:d]
+# def rotateArr(arr, d):
+#     n = len(arr)
+#     d = d % n
+#     return arr[d:] + arr[:d]
 
 
 # T.C = O(n)
 # S.C = O(n)
 
 
-def rotateArr(arr, d):
-    n = len(arr)
-    temp = []
-    for i in range(d, n):
-        temp.append(arr[i])
-    for j in range(0, d):
-        temp.append(arr[j])
-    return temp
+# def rotateArr(arr, d):
+#     n = len(arr)
+#     temp = []
+#     for i in range(d, n):
+#         temp.append(arr[i])
+#     for j in range(0, d):
+#         temp.append(arr[j])
+#     return temp
 
 
 # T.C = O(n)
 # S.C = O(n)
 
 
-def rotateArr(arr, d):
-    n = len(arr)
-    first = 0
-    for i in range(d):
-        first = arr[0]
-        for j in range(n - 1):
-            arr[j] = arr[j + 1]
-        arr[n - 1] = first
-    return arr
+# def rotateArr(arr, d):
+#     n = len(arr)
+#     first = 0
+#     for i in range(d):
+#         first = arr[0]
+#         for j in range(n - 1):
+#             arr[j] = arr[j + 1]
+#         arr[n - 1] = first
+#     return arr
 
 
 # T.C = O(d*n)
 # S.C = O(1)
 
-print(rotateArr([1, 2, 3, 4, 5], 2))

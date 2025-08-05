@@ -12,14 +12,14 @@ def reverseArray(arr):
 
 
 # Naive method
-def reverseArray(arr):
-    temp = []
-    n = len(arr)
-    for i in range(n):
-        temp.append(arr[n - 1 - i])
-    # for i in range(len(arr) - 1, -1, -1):
-    #     temp.append(arr[i])
-    return temp
+# def reverseArray(arr):
+#     temp = []
+#     n = len(arr)
+#     for i in range(n):
+#         temp.append(arr[n - 1 - i])
+#     # for i in range(len(arr) - 1, -1, -1):
+#     #     temp.append(arr[i])
+#     return temp
 
 
 # T.C = O(n)

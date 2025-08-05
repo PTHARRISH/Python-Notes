@@ -20,7 +20,7 @@ def nextPermutation(arr):
     return arr
 
 
-print(nextPermutation([1, 2, 4, 5, 6, 0]))
+# print(nextPermutation([1, 2, 4, 5, 6, 0]))
 
 # T.C = O(n)
 # S.C = O(1)
