@@ -1,11 +1,13 @@
 import os
 import sys
+import unittest
 
 sys.path.append(os.path.abspath(".."))
 from geek_for_geeks.challenge.move_zero import pushZerosToEnd
 from geek_for_geeks.challenge.reverse_an_array import reverseArray
 from geek_for_geeks.challenge.rotate_an_array import rotateArr
 from geek_for_geeks.challenge.secondlargest import getSecondLargest
+from geek_for_geeks.challenge.stock_buy_and_sell import maximumProfit
 
 
 class Test_getSecondLargest:
@@ -116,3 +118,25 @@ class TestRotateArr:
         arr = [1, 2, 3, 4]
         rotated = rotateArr(arr, 6)  # 6 % 4 = 2
         assert rotated == [3, 4, 1, 2]
+
+
+class TestMaximumProfit(unittest.TestCase):
+    def test_empty_list(self):
+        self.assertEqual(maximumProfit([]), 0)
+
+    def test_single_day(self):
+        self.assertEqual(maximumProfit([10]), 0)
+
+    def test_increasing_prices(self):
+        self.assertEqual(maximumProfit([1, 2, 3, 4, 5]), 4)
+
+    def test_decreasing_prices(self):
+        self.assertEqual(maximumProfit([5, 4, 3, 2, 1]), 0)
+
+    def test_fluctuating_prices(self):
+        self.assertEqual(maximumProfit([7, 1, 5, 3, 6, 4]), 7)
+
+    def test_all_same_prices(self):
+        self.assertEqual(maximumProfit([2, 2, 2, 2, 2]), 0)
+
+

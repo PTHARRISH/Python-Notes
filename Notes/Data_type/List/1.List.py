@@ -14,13 +14,14 @@
 
 # Allows Duplicate Members: A list can have two or more elements that are identical.
 
-# Heterogeneous: Lists can contain elements of different types, 
+# Heterogeneous: Lists can contain elements of different types,
 # although this is generally not recommended for most applications.
 print("-----------------------------------------------------------")
 
 
 # Creation of Lists object
-# You can create a list by enclosing its elements in square brackets [], separated by commas:
+# You can create a list by enclosing its elements in square brackets [],
+# separated by commas:
 
 # 1.
 my_list = []
